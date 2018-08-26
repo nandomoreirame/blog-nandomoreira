@@ -1,0 +1,68 @@
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+paginate: 6
+paginate_path: "/page/:num"
+language: 'pt-br'
+
+source: "src"
+baseurl: ""
+production_url: https://blog.nandomoreira.me/
+url: "https://blog.nandomoreira.me"
+
+# Website info
+title: Blog do Fernando
+description: Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba
+cover: assets/images/blog-cover.png
+logo: false
+favicon: assets/images/favicon.png
+
+# Social info
+navigation: True
+twitter: oseunando
+# facebook: oseunando
+
+# Disqus
+disqus: true
+disqus_shortname: fernandomoreira
+
+# Google Analytics
+google_analytics: UA-119443578-1
+
+# Permalinks
+permalink: /:title
+
+# Tags' info in `_data/tags_info.yml`
+plugins_dir: ./_plugins
+
+# gems and other configs
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+compress_html:
+  clippings: all
+  comments:  all
+  endings: all
+  ignore:
+    envs: ['development', 'local']
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile_
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - README.md
+  - ./*.lock
+  - .git*

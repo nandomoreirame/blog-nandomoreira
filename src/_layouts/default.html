@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+<head>
+    {% include head.html %}
+</head>
+
+<body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
+
+    <div class="site-wrapper">
+        {{ content }}
+    </div>
+
+    <!-- highlight.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script> -->
+    <!-- <script>
+    $(document).ready(function () {
+      $('pre code').each(function (i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+    </script> -->
+
+    <!-- <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script> -->
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('{{ paginator.total_pages }}');
+    </script>
+    <script src="{{ site.baseurl }}/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    <!--
+    {% if paginator.total_pages > site.paginate %}
+    <script>
+      var maxPages = parseInt('{{ paginator.total_pages }}');
+    </script>
+
+    <script src="{{ site.baseurl }}/assets/js/infinitescroll.js"></script>
+    {% endif %}
+    -->
+
+    {% if jekyll.environment == "production" %}
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afdedb75d1d823f"></script>
+    {% endif %}

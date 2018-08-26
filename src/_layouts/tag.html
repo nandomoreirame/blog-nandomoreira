@@ -1,0 +1,23 @@
+---
+layout: default
+current: tag
+title: Tag Page
+cover: false
+class: 'tag-template'
+navigation: True
+logo: 'assets/images/ghost.png'
+---
+<header class="site-header outer {% if cover or page.cover %}" style="background-image: url({{ site.baseurl }}/{% if cover %}{{ cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">{{ page.tag | capitalizeall }}</h1>
+            <h2 class="site-description">
+                {% if tag_description %}
+                    {{ tag_description }}
+                {% elsif page.tag %}
+                    A collection of {{ paginator.total_posts }} posts
+                {% endif %}
+            </h2>
+        </div>
+    </div>
+</header>

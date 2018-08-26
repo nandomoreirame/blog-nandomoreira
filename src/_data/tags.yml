@@ -1,0 +1,4 @@
+hello:
+  name: Hello
+  description: Some of the greatest words ever spoken.
+  cover: assets/images/hello.jpg

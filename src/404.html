@@ -1,0 +1,33 @@
+---
+layout: error
+current: error
+title: "404 - Page Not Found"
+permalink: 404.html
+---
+
+<div class="site-wrapper">
+
+  <header class="site-header outer {% if page.cover %}" style="background-image: url({{ site.baseurl }}/{{ page.cover }})){% else %}no-cover{% endif %}">
+    <div class="inner">
+      <nav class="site-nav-center">
+        {% if site.logo %}
+            <a class="site-nav-logo" href="{{ site.baseurl }}/">
+              <img src="{{site.baseurl}}/{{ site.logo }}" alt="{{ site.title }}">
+            </a>
+        {% else %}
+            <a class="site-nav-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+      <section class="error-message">
+        <h1 class="error-code">404</h1>
+        <p class="error-description">Oops... Página não encontrada.</p> <br>
+        <a class="error-link" href="{{ site.baseurl }}/">Ir para a página inicial →</a>
+      </section>
+    </div>
+  </main>
+</div>
