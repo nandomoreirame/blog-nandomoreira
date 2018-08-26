@@ -84,5 +84,4 @@ wb-manifest.*
 mix-manifest.json
 webpack-report.html
 src/assets/scripts
-src/_includes/css
 bundle.css

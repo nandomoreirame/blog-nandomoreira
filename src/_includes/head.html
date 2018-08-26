@@ -3,12 +3,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <title>Blog do Fernando</title>
 
-<link rel="icon" href="{{ "/favicon.png" | relative_url }}">
+<link rel="icon" href="{{ "/favicon.png" | absolute_url }}">
 
 {% if jekyll.environment == "production" %}
     <style type="text/css">
-        {% include css/bundle.css %}
+        {% include bundle.css %}
     </style>
 {% else %}
     <link rel="stylesheet" href="{{ "/bundle.css" | relative_url }}">
 {% endif %}
+
+<script src="{{ "/assets/scripts/manifest.js" | relative_url }}"></script>
+<script src="{{ "/assets/scripts/vendor.js" | relative_url }}"></script>

@@ -6,12 +6,13 @@ const mix = require('laravel-mix')
 const { GenerateSW } = require('workbox-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const pkg = require('./package.json')
-const destPath = join(__dirname, 'assets')
-const destCss = mix.inProduction() ? `./src/_includes/css` : './src'
+const srcPath = join(__dirname, 'src')
+const destPath = join(srcPath, 'assets')
+const destCss = mix.inProduction() ? join(srcPath, '_includes') : srcPath
 
 mix
-  .js('./src/_scripts/main.js', `${destPath}/src/scripts`) // https://laravel.com/docs/5.6/mix#working-with-scripts
-  .stylus('./src/_stylus/main.styl', `${destCss}/bundle.css`, {
+  .js(`${srcPath}/_scripts/main.js`, `${destPath}/scripts`) // https://laravel.com/docs/5.6/mix#working-with-scripts
+  .stylus(`${srcPath}/_stylus/main.styl`, `${destCss}/bundle.css`, {
     use: [
       require('rupture')()
     ]
