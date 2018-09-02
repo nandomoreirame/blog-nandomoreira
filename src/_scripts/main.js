@@ -31,3 +31,10 @@ Vue.component('cp-scroll-progress', require('@/components/ScrollProgress.vue'))
 new Vue({ // eslint-disable-line
   el: '#site'
 })
+
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('sw.js')
+//     .then(registration => {
+//       console.log('offline worker registered!')
+//     })
+// }

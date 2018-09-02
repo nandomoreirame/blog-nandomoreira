@@ -3,20 +3,15 @@
 
 const { join, resolve } = require('path')
 const mix = require('laravel-mix')
-const { GenerateSW } = require('workbox-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-const pkg = require('./package.json')
+// const { GenerateSW } = require('workbox-webpack-plugin')
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// const pkg = require('./package.json')
 const srcPath = join(__dirname, 'src')
 const destPath = join(srcPath, 'assets')
 const destCss = mix.inProduction() ? join(srcPath, '_includes') : srcPath
 
 mix
   .js(`${srcPath}/_scripts/main.js`, `${destPath}/scripts`) // https://laravel.com/docs/5.6/mix#working-with-scripts
-  // .stylus(`${srcPath}/_stylus/main.styl`, `${destCss}/bundle.css`, {
-  //   use: [
-  //     require('rupture')()
-  //   ]
-  // })
   .sass(`${srcPath}/_sass/main.sass`, `${destCss}/bundle.css`, {
     precision: 5
   }) // https://laravel.com/docs/5.6/mix#sass
@@ -45,35 +40,35 @@ mix.webpackConfig({
   }
 })
 
-if (mix.inProduction()) {
-  mix.webpackConfig({
-    plugins: [
-      new GenerateSW({ // eslint-disable-line
-        cacheId: `${pkg.name}`,
-        swDest: join(`${__dirname}`, 'src', 'sw.js'),
-        precacheManifestFilename: join(`${__dirname}`, 'src', 'wb-manifest.[manifestHash].js'),
-        clientsClaim: true,
-        skipWaiting: true,
-        runtimeCaching: [{
-          urlPattern: new RegExp(`${pkg.homepage}`),
-          handler: 'networkFirst',
-          options: {
-            cacheName: `${pkg.name}-${pkg.version}`
-          }
-        }, {
-          urlPattern: new RegExp('https://fonts.(googleapis|gstatic).com'),
-          handler: 'cacheFirst',
-          options: {
-            cacheName: 'google-fonts'
-          }
-        }]
-      }),
-      new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        reportFilename: join(`${__dirname}`, 'src', 'webpack-report.html'),
-        openAnalyzer: false,
-        logLevel: 'silent'
-      })
-    ]
-  })
-}
+// if (mix.inProduction()) {
+//   mix.webpackConfig({
+//     plugins: [
+//       new GenerateSW({ // eslint-disable-line
+//         cacheId: `${pkg.name}`,
+//         swDest: join(`${__dirname}`, 'src', 'sw.js'),
+//         precacheManifestFilename: join(`${__dirname}`, 'src', 'wb-manifest.[manifestHash].js'),
+//         clientsClaim: true,
+//         skipWaiting: true,
+//         runtimeCaching: [{
+//           urlPattern: new RegExp(`${pkg.homepage}`),
+//           handler: 'networkFirst',
+//           options: {
+//             cacheName: `${pkg.name}-${pkg.version}`
+//           }
+//         }, {
+//           urlPattern: new RegExp('https://fonts.(googleapis|gstatic).com'),
+//           handler: 'cacheFirst',
+//           options: {
+//             cacheName: 'google-fonts'
+//           }
+//         }]
+//       }),
+//       new BundleAnalyzerPlugin({
+//         analyzerMode: 'static',
+//         reportFilename: join(`${__dirname}`, 'src', 'webpack-report.html'),
+//         openAnalyzer: false,
+//         logLevel: 'silent'
+//       })
+//     ]
+//   })
+// }
