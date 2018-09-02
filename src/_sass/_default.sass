@@ -1199,10 +1199,8 @@ blockquote.blockquote
   .navbar-nav
     .nav-link
       color: rgba(0, 0, 0, 0.5)
-
       &:focus, &:hover
         color: rgba(0, 0, 0, 0.7)
-
       &.disabled
         color: rgba(0, 0, 0, 0.3)
 
@@ -1256,6 +1254,13 @@ blockquote.blockquote
 
   .navbar-text
     color: rgba(255, 255, 255, 0.5)
+
+
+.nav-link
+  small
+    opacity: 0.6
+    margin-right: 5px
+    display: inline-block
 
 .btn
   font-weight: normal
@@ -1769,26 +1774,6 @@ blockquote.blockquote
 
 hr
   border-top: 1px solid rgba(0, 0, 0, 0.1)
-
-small, .small
-  font-size: 80%
-  font-weight: normal
-
-mark, .mark
-  padding: 0.2em
-  background-color: #fcf8e3
-
-.blockquote
-  padding: 0.5rem 1rem
-  margin-bottom: 1rem
-  font-size: 1.25rem
-  border-left: 5px solid #999
-
-.blockquote-footer
-  color: #868e96
-
-  &::before
-    content: "\2014 \00A0"
 
 .text-primary
   color: #999 !important
