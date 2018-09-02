@@ -30,9 +30,13 @@
             </div>
             <div id="navbarcollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
+                    {% if page.url != "/" %}
                     <li class="nav-item">
-                        <a href="{{ "/" | absolute_url }}" class="nav-link active">Home</a>
+                        <a href="{{ "/" | absolute_url }}" class="nav-link active">
+                            <i class="fa fa-arrow-left"></i> Página inicial
+                        </a>
                     </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a href="https://onedev.studio/projetos/" target="_blank" class="nav-link">Projetos</a>
                     </li>

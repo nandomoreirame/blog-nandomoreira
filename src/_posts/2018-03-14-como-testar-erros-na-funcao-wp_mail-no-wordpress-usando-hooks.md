@@ -3,7 +3,7 @@ layout: post
 current: post
 title: Como testar erros na função wp_mail() no WordPress usando hooks
 date: 2018-03-14
-category: WordPress
+categories: WordPress
 tags:
 - wordpress
 - function

@@ -1,22 +1,24 @@
 <script src="{{ "/assets/scripts/main.js" | relative_url }}"></script>
 
-{% if jekyll.environment == "production" %}
-    <!-- script addthis.com -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afdedb75d1d823f"></script>
-{% endif %}
+{% if page.layout == 'post' %}
+    {% if jekyll.environment == "production" %}
+        <!-- script addthis.com -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afdedb75d1d823f"></script>
 
-{% if site.disqus or page.disqus %}
-<script>
-    var disqus_config = function () {
-        this.page.identifier = '{{ page.id }}/';
-        this.page.title = '{{ page.title }}';
-        this.page.url = '{{ site.url }}{{ post.url }}';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+        {% if site.disqus or page.disqus %}
+            <script>
+                var disqus_config = function () {
+                    this.page.identifier = '{{ page.id }}/';
+                    this.page.title = '{{ page.title }}';
+                    this.page.url = '{{ site.url }}{{ post.url }}';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        {% endif %}
+    {% endif %}
 {% endif %}

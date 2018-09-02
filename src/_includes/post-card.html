@@ -2,18 +2,21 @@
     <div class="post__card">
         <div class="post__thumbnail">
             <a href="{{ post.url }}" title="{{ post.title }}">
-                <img class="img-fluid lozad" data-src="{{ post.cover | absolute_url }}" alt="{{ post.title }}">
+                <img class="img-fluid lozad" data-src="{{ post.cover | absolute_url }}" src="{{ "/assets/images/loading-image.gif" | absolute_url }}" alt="{{ post.title }}">
             </a>
         </div>
         <div class="post__details">
             <div class="post__meta d-flex justify-content-between">
-                <div class="post__date">{{ post.date | date: "%Y %B" }}</div>
+                <div class="post__date">
+                    <i class="far fa-calendar-alt"></i>
+                    {{ post.date | date: "%Y %B" }}
+                </div>
                 <div class="post__category">
-                    {% for tag in post.tags %}
-                        {% if forloop.index == post.tags.size %}
-                           <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>
+                    {% for category in post.categories %}
+                        {% if forloop.index == post.categories.size %}
+                           <a href='{{ site.baseurl }}category/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>
                         {% else %}
-                           <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>,
+                           <a href='{{ site.baseurl }}category/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>,
                         {% endif %}
                     {% endfor %}
                 </div>

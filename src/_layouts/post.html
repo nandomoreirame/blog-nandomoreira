@@ -80,15 +80,14 @@ disqus: true
     </div>
 </main>
 
-{% if site.disqus or page.disqus %}
-    <div class="mt-4 pt-4 mb-4 pb-4 container">
-        <div class="blog-post justify-content-center d-flex">
-            <div class="post-single-comments col-md-9 p-5">
-                <div id="disqus_thread"></div>
+{% if jekyll.environment == "production" %}
+    {% if site.disqus or page.disqus %}
+        <div class="mt-4 pt-4 mb-4 pb-4 container">
+            <div class="blog-post justify-content-center d-flex">
+                <div class="post-single-comments col-md-9 p-5">
+                    <div id="disqus_thread"></div>
+                </div>
             </div>
         </div>
-    </div>
-{% endif %}
-
-{% if jekyll.environment == "production" %}
+    {% endif %}
 {% endif %}
