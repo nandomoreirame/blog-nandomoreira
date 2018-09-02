@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "src",
+		},
+		{
+			"name": "root",
+			"path": "."
+		}
+	],
+	"settings": {
+    "search.exclude": {
+      "**/_site": true
+    },
+    "files.exclude": {
+      "**/src": true,
+      "**/_site": true,
+    }
+  }
+}
