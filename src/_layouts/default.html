@@ -7,10 +7,9 @@ layout: compress
 
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
 
+<div id="site">
+    {% include header.html %}
     {{ content }}
+</div>
 
-    <script src="{{ "/assets/scripts/main.js" | relative_url }}"></script>
-
-    {% if jekyll.environment == "production" %}
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afdedb75d1d823f"></script>
-    {% endif %}
+{% include scripts.html %}

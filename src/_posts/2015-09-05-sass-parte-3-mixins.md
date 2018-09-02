@@ -1,14 +1,16 @@
 ---
 layout: post
 current: post
-navigation: True
 title: "#3 - Conhecendo o pré processador SASS | Mixins"
 date: 2015-09-05-sass-parte-3-mixins.md.erb
 description: "Mixin foi definitivamente algo novo para mim, você consegue passar valores por parâmetros assim como funções"
 keywords: "sass, css, scss, pre-processador, pre-processadores"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
 categories: sass
-tags: "sass, css, pre-processador"
+tags:
+- sass
+- css
+- pre-processador
 class: post-template
 subclass: 'post'
 

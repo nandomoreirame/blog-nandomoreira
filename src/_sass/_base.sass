@@ -1,0 +1,103 @@
+html,
+body,
+#site
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+
+*
+  -webkit-tap-highlight-color: rgba(#000, 0)
+
+#site
+  padding-top: 60px
+
+p
+  font-size: 1.125rem
+  line-height: 1.8
+  &:not(:last-child)
+    margin-bottom: 1.875rem /* 30/16 */
+
+a
+  color: #999
+  text-decoration: none
+  &:focus, &:hover
+    color: #737373
+    text-decoration: underline
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+  font-family: 'Poppins', $font-family-base
+  font-weight: 800
+  line-height: 1.1
+  margin: 1.875rem 0
+  color: inherit
+
+h1, .h1
+  font-size: 3rem /* 48/16 */
+
+h2, .h2
+  font-size: 2.625rem /* 42/16 */
+
+h3, .h3
+  font-size: 2rem /* 32/16 */
+
+h4, .h4
+  font-size: 1.75rem /* 28/16 */
+
+h5, .h5
+  font-size: 1.625rem /* 26/16 */
+
+h6, .h6
+  font-size: 1.375rem /* 22/16 */
+
+strong
+  font-weight: 700
+
+a, i, span
+  display: inline-block
+  text-decoration: none
+  -webkit-transition: all 0.3s
+  transition: all 0.3s
+  &:hover, &:focus
+    text-decoration: none
+
+a i
+  -webkit-transition: none
+  transition: none
+
+ul, ol
+  padding: 0 0 0 1.3rem
+  margin-bottom: 0.5rem
+
+button, input
+  outline: none !important
+  font-family: inherit
+
+button
+  cursor: pointer
+
+blockquote
+  padding: 25px
+  margin: 50px 0
+  display: block
+  position: relative
+  &:after
+    content: "''"
+    font: italic 25rem Arial,Serif,Georgia,serif
+    color: rgba(#000, 0.05)
+    position: absolute
+    top: -80px
+    left: -70px
+    z-index: 0
+  small
+    display: block
+    color: lighten(#000, 25%)
+    &:before
+      content: ' ⏤ '
+  p
+    font: italic 1.65rem/1.5 Georgia,Times,serif
+    color: #000
+    margin: 0
+    position: relative
+    font-size: 1.5rem
+    z-index: 1

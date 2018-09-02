@@ -1,7 +1,6 @@
 ---
 layout: post
 current: post
-navigation: True
 title: "Wordpress - plugins x functions.php"
 date: 2015-07-24
 description: "Muitos amigos e colegas de trabalho sempre me perguntam porque eu sou contra o uso de plugins no Wordpress."

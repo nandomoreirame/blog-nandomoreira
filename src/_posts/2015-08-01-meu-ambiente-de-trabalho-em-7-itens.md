@@ -1,7 +1,6 @@
 ---
 layout: post
 current: post
-navigation: True
 title: "Meu ambiente de trabalho em 7 itens"
 date: 2015-08-01
 description: "Aderi ao GNU linux como OS padrão no final de 2014, apesar de usá-lo desde 2009."

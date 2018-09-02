@@ -1,14 +1,16 @@
 ---
 layout: post
 current: post
-navigation: True
 title: "#4 - Conhecendo o pré processador SASS | Funções"
 date: 2015-09-05
 description: "Conhecendo o pré-processador SASS-Parte 4"
 keywords: "sass, css, scss, pre-processador, pre-processadores"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
 categories: sass
-tags: "sass, css, pre-processador"
+tags:
+- sass
+- css
+- pre-processador
 class: post-template
 subclass: 'post'
 

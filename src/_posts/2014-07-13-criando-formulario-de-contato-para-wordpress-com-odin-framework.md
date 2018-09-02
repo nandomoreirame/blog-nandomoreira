@@ -1,7 +1,6 @@
 ---
 layout: post
 current: post
-navigation: True
 title: Criando formulário de contato para Wordpress com Odin Framework
 description: Criado pelo Grupo WordPress Brasil, Odin é um framework com objetivo de turbinar e agilizar o desenvolvimento de temas para WordPress.
 keywords: "Wordpress, Dicas, Odin"

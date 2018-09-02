@@ -12,10 +12,13 @@ const destCss = mix.inProduction() ? join(srcPath, '_includes') : srcPath
 
 mix
   .js(`${srcPath}/_scripts/main.js`, `${destPath}/scripts`) // https://laravel.com/docs/5.6/mix#working-with-scripts
-  .stylus(`${srcPath}/_stylus/main.styl`, `${destCss}/bundle.css`, {
-    use: [
-      require('rupture')()
-    ]
+  // .stylus(`${srcPath}/_stylus/main.styl`, `${destCss}/bundle.css`, {
+  //   use: [
+  //     require('rupture')()
+  //   ]
+  // })
+  .sass(`${srcPath}/_sass/main.sass`, `${destCss}/bundle.css`, {
+    precision: 5
   }) // https://laravel.com/docs/5.6/mix#sass
   .extract(['vue', 'jquery', 'moment']) // https://laravel.com/docs/5.6/mix#vendor-extraction
   .options({

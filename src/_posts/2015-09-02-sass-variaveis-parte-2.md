@@ -1,7 +1,6 @@
 ---
 layout: post
 current: post
-navigation: True
 title: "#2 - Conhecendo o pré-processador SASS | Variáveis"
 date: 2015-09-02
 description: "Se você está começando agora no mundo do desenvolvimento você precisa ter uma base de como funciona variáveis."

@@ -5,24 +5,33 @@ class: page-template
 disqus: false
 ---
 
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+<div class="container">
+    <div class="row">
+        <main id="site-main" class="post blog-post col-lg-8" role="main">
+            <div class="container">
 
-        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+                <article class="post-single {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
-            <header class="post-full-header">
-                <h1 class="post-full-title">{{ page.title }}</h1>
-            </header>
+                    {% if page.cover %}
+                        <figure class="post-single-image post__thumbnail">
+                            <img src="{{ page.cover | absolute_url }}" alt="{{ page.title }}">
+                        </figure>
+                    {% endif %}
 
-            {% if page.cover %}
-                <figure class="post-full-image" style="background-image: url({{ site.baseurl }}/{{ page.cover }})"></figure>
-            {% endif %}
+                    <section class="post__details">
+                        <header class="post-full-header">
+                            <h1 class="post-full-title">{{ page.title }}</h1>
+                        </header>
+                        <div class="post-body">
+                            {{ content }}
+                        </div>
+                    </section>
 
-            <section class="post-full-content">
-                {{ content }}
-            </section>
+                </article>
 
-        </article>
+            </div>
+        </main>
 
+        {% include sidebar.html %}
     </div>
-</main>
+</div>

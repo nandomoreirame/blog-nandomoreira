@@ -1,26 +1,23 @@
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-paginate: 6
+paginate: 12
 paginate_path: "/page/:num"
 language: 'pt-br'
 
 source: "src"
-baseurl: ""
-production_url: https://blog.nandomoreira.me/
 url: "https://blog.nandomoreira.me"
 
 # Website info
-title: Blog do Fernando
+title: Nando's blog
 description: Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba
 cover: assets/images/blog-cover.png
 logo: false
 favicon: assets/images/favicon.png
 
 # Social info
-navigation: True
 twitter: oseunando
-# facebook: oseunando
+facebook: oseunando
 
 # Disqus
 disqus: true
@@ -37,6 +34,7 @@ plugins_dir: ./_plugins
 
 # gems and other configs
 plugins:
+  - jekyll-youtube
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
