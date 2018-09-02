@@ -1,7 +1,8 @@
 <script src="{{ "/assets/scripts/main.js" | relative_url }}"></script>
 
-{% if page.layout == 'post' %}
-    {% if jekyll.environment == "production" %}
+{% if jekyll.environment == "production" %}
+    <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+    {% if page.layout == 'post' %}
         <!-- script addthis.com -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afdedb75d1d823f"></script>
 

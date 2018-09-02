@@ -7,10 +7,6 @@
         </div>
         <div class="post__details">
             <div class="post__meta d-flex justify-content-between">
-                <div class="post__date">
-                    <i class="far fa-calendar-alt"></i>
-                    {{ post.date | date: "%Y %B" }}
-                </div>
                 <div class="post__category">
                     {% for category in post.categories %}
                         {% if forloop.index == post.categories.size %}
@@ -23,6 +19,17 @@
             </div>
             <h3 class="post__title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
             <p class="post__description text-muted">{{ post.content | strip_html | truncatewords: 20, "..." }}</p>
+        </div>
+        <div class="post__footer d-flex justify-content-between align-items-center">
+            <span class="post__date">
+                <i class="far fa-calendar-alt"></i>
+                {{ post.date | date: "%B, %Y" }}
+            </span>
+            <span class="post__view">
+                <a href="{{ post.url }}" title="ver post">
+                    ver post <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </span>
         </div>
     </div>
 </article>
