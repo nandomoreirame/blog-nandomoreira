@@ -1,6 +1,14 @@
 {
 	"folders": [
 		{
+			"name": "sass",
+			"path": "src/_sass",
+		},
+		{
+			"name": "scripts",
+			"path": "src/_scripts",
+		},
+		{
 			"path": "src",
 		},
 		{

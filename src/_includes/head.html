@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {% if jekyll.environment == "production" %}
 <!-- Google Tag Manager -->
@@ -29,7 +30,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}</title>
 <meta name="HandheldFriendly" content="True">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ current_url }}">
 <meta name="referrer" content="no-referrer-when-downgrade">
