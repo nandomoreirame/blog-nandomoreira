@@ -23,9 +23,7 @@ disqus: true
                         <div class="date">
                             <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B, %Y" }}
                         </div>
-                        <div class="date">
-                            <i class="far fa-clock"></i> {% include post-readingtime.erb %}
-                        </div>
+                        {% include post-readingtime.erb %}
                         <div class="comments meta-last">
                             <i class="fa fa-comment"></i>
                             <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}/">0</span>
