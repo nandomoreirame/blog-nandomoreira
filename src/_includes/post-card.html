@@ -1,10 +1,10 @@
 <article class="post col-md-4" v-masonry-tile>
     <div class="post__card">
-        <div class="post__thumbnail">
-            <a href="{{ post.url }}" title="{{ post.title }}">
+        <a href="{{ post.url }}" title="{{ post.title }}">
+            <figure class="post__thumbnail">
                 <img class="img-fluid lozad" data-src="{{ post.cover | absolute_url }}" src="{{ "/assets/images/loading-image.gif" | absolute_url }}" alt="{{ post.title }}">
-            </a>
-        </div>
+            </figure>
+        </a>
         <div class="post__details">
             <div class="post__meta d-flex justify-content-between">
                 <div class="post__category">
