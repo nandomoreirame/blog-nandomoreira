@@ -53,7 +53,7 @@ compress_html:
   startings: [html, head, body]
 
 include:
-  - src/_redirects
+  - _redirects
 
 exclude:
   - assets/css
