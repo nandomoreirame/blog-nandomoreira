@@ -81,57 +81,17 @@ $ vue init nuxt-community/starter-template blog-with-vuejs \
 
 A estrutura padrão de um aplicativo **Nuxt.js** destina-se a fornecer um ótimo ponto de partida para pequenas e grandes aplicações. Claro, você é livre para organizar seu aplicativo, como quiser.
 
-### Diretório `assets`
-
-Esse diretório contém seus recursos não compilados, como Less, SASS, Stylus ou JavaScript.
-
-### Diretório `component`
-
-Esse diretório contém seus componentes Vue. O Nuxt.js não carrega automaticamente esses componentes.
-
-### Diretório `layouts`
-
-Esse diretório contém os layouts da sua aplicação.
-
-**Este diretório não pode ser renomeado.**
-
-### Diretório `middleware`
-
-Esse diretório contém o Middleware de sua aplicação. O Middleware permite que você defina funções personalizadas que podem ser executadas antes de renderizar uma página ou um grupo de páginas (layouts).
-
-### Diretório `pages`
-
-Esse diretório contém as views e rotas da sua aplicação. O framework lê todos os arquivos `.vue` dentro desse diretório e cria o router da aplicação.
-
-**Este diretório não pode ser renomeado.**
-
-### Diretório `plugins`
-
-Esse diretório contém os plugins JavaScript que deseja executar antes de instanciar o aplicativo Vue.js da raiz.
-
-### Diretório `static`
-
-Esse diretório contém seus arquivos estáticos. Cada arquivo dentro deste diretório é mapeado para a raiz do seu site `/`. Exemplo: `/static/robots.txt` é mapeado como `http://seusite.com/robots.txt`
-
-**Este diretório não pode ser renomeado.**
-
-### Diretório `store`
-
-Esse diretório contém seus arquivos do **Vuex Store**. A opção Vuex Store é implementada na estrutura do Nuxt.js. A criação de um arquivo `index.js` neste diretório habilita essa opção automaticamente.
-
-**Este diretório não pode ser renomeado.**
-
-### Arquivo `nuxt.config.js`
-
-Esse arquivo contém a configuração personalizada do **Nuxt.js**.
-
-**Este arquivo não pode ser renomeado.**
-
-### Arquivo `package.json`
-
-Esse arquivo contém suas dependências e scripts da sua aplicação.
-
-**Este arquivo não pode ser renomeado.**
+{:.table.table-bordered.table-striped}
+| **Diretório `assets`** | Esse diretório contém seus recursos não compilados, como Less, SASS, Stylus ou JavaScript. |
+| **Diretório `component`** | Esse diretório contém seus componentes Vue. O Nuxt.js não carrega automaticamente esses componentes. |
+| **Diretório `layouts`** | Esse diretório contém os layouts da sua aplicação. <br/>_Este diretório não pode ser renomeado._ |
+| **Diretório `middleware`** | Esse diretório contém o Middleware de sua aplicação. O Middleware permite que você defina funções personalizadas que podem ser executadas antes de renderizar uma página ou um grupo de páginas (layouts). |
+| **Diretório `pages`** | Esse diretório contém as views e rotas da sua aplicação. O framework lê todos os arquivos `.vue` dentro desse diretório e cria o router da aplicação. <br/>_Este diretório não pode ser renomeado._ |
+| **Diretório `plugins`** | Esse diretório contém os plugins JavaScript que deseja executar antes de instanciar o aplicativo Vue.js da raiz. |
+| **Diretório `static`** | Esse diretório contém seus arquivos estáticos. Cada arquivo dentro deste diretório é mapeado para a raiz do seu site `/`. Exemplo: `/static/robots.txt` é mapeado como `http://seusite.com/robots.txt` <br/>_Este diretório não pode ser renomeado._ |
+| **Diretório `store`** | Esse diretório contém seus arquivos do **Vuex Store**. A opção Vuex Store é implementada na estrutura do Nuxt.js. A criação de um arquivo `index.js` neste diretório habilita essa opção automaticamente. <br/>_Este diretório não pode ser renomeado._ |
+| **Arquivo `nuxt.config.js`** | Esse arquivo contém a configuração personalizada do **Nuxt.js**. <br/>_Este arquivo não pode ser renomeado._ |
+| **Arquivo `package.json`** | Esse arquivo contém suas dependências e scripts da sua aplicação. <br/>_Este arquivo não pode ser renomeado._ |
 
 > Veja na [documentação do Nuxt.js](https://nuxtjs.org/guide/directory-structure) para saber mais informações sobre esses diretórios e arquivos que eu citei acima.
 
