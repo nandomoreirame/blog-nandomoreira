@@ -18,11 +18,8 @@
   margin: 0;
   padding: 1.25rem /* 20/16 */;
 }
-.highlight {
-  margin-bottom: 1.875rem /* 30/16 */;
-  border-radius: 1.25rem; /* 20/16 */
-  box-shadow: 1px 1px 99px #e2e2e2;
-}
+.highlight { margin-bottom: 1.875rem /* 30/16 */; }
+.highlight code { line-height: 1.6; }
 
 .highlight .hll { background-color: #49483e }
 .highlight  { background: #272822; color: #f8f8f2 }

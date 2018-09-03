@@ -1,9 +1,3 @@
-.text-bold
-  font-weight: 700
-
-.text-small
-  font-size: 0.9rem
-
 .header
   background-color: #fff
   box-shadow: 0 2px 6px -2px rgba(#000, .1)
@@ -18,17 +12,6 @@
   margin-top: 30px
   h2
     margin-bottom: 0
-
-.animsition
-  z-index: 9999
-
-.widget
-  margin-bottom: 40px
-  padding: 30px
-  border: 1px solid #eee
-
-  header
-    margin-bottom: 20px
 
 .category a
   color: #999
@@ -50,161 +33,6 @@
   &:hover
     color: #000
 
-i[class*="icon-"]
-  -webkit-transform: translateY(3px)
-  transform: translateY(3px)
-
-#style-switch-button
-  z-index: 9999 !important
-
-.bg-red
-  background: #ff7676 !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-blue
-  background: #85b4f2 !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-yellow
-  background: #ffc107 !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-green
-  background: #54e69d !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-orange
-  background: #ffc36d !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-violet
-  background: #796AEE !important
-  color: #fff
-
-  &:hover
-    color: #fff
-
-.bg-gray
-  background: #ced4da !important
-
-.bg-white
-  background: #fff !important
-
-.text-red
-  color: #ff7676
-
-  &:hover
-    color: #ff7676
-
-.text-yellow
-  color: #ffc107
-
-  &:hover
-    color: #ffc107
-
-.text-green
-  color: #54e69d
-
-  &:hover
-    color: #54e69d
-
-.text-orange
-  color: #ffc36d
-
-  &:hover
-    color: #ffc36d
-
-.text-violet
-  color: #796AEE
-
-  &:hover
-    color: #796AEE
-
-.text-blue
-  color: #85b4f2
-
-  &:hover
-    color: #85b4f2
-
-.text-gray
-  color: #999
-
-  &:hover
-    color: #999
-
-.text-white
-  color: #fff
-
-.no-padding
-  padding: 0 !important
-
-.no-padding-bottom
-  padding-bottom: 0 !important
-
-.no-padding-top
-  padding-top: 0 !important
-
-.no-margin
-  margin: 0 !important
-
-.no-margin-bottom
-  margin-bottom: 0 !important
-
-.no-margin-top
-  margin-top: 0 !important
-
-.padding-small
-  padding: 100px 0
-
-.btn
-  border-radius: 0 !important
-
-.badge
-  font-weight: 300
-
-.badge-rounded
-  border-radius: 50px
-
-.heading-light
-  font-weight: 300 !important
-
-.heading-medium
-  font-weight: 400 !important
-
-.pagination-template
-  li.page-item
-    margin: 0 5px
-
-  a.page-link
-    width: 40px
-    height: 40px
-    line-height: 27px
-    border-radius: 50% !important
-    background-color: $body-bg
-    border: 1px solid #ddd
-    color: #555
-    text-align: center
-    &:hover, &.active
-      background: darken($body-bg, 10%)
-
-.text-primary
-  color: #999 !important
-
 p
   &.text-hero
     font-size: 1.2em
@@ -213,32 +41,6 @@ p
 
   &.small-text-hero
     font-size: 1em
-
-.pagination-template
-  li.page-item
-    margin: 0 5px
-
-  a.page-link
-    width: 40px
-    height: 40px
-    line-height: 27px
-    border-radius: 50% !important
-    background-color: $body-bg
-    border: none
-    color: #555
-    text-align: center
-
-    &:hover, &.active
-      background: darken($body-bg, 10%)
-
-.container-fluid
-  width: 100%
-
-.text-big
-  font-size: 1.4em
-  font-weight: 300
-  line-height: 1.8em
-  color: #111
 
 a.hero-link
   color: inherit !important
@@ -262,160 +64,6 @@ a.hero-link
 
     &::after
       background: #999
-
-div[class*="-btn"]
-  cursor: pointer
-
-@media (max-width: 767px)
-  nav.navbar .search-btn
-    margin-left: 0
-    padding-left: 0
-    border-left: none
-
-@media (max-width: 575px)
-  nav.navbar .container
-    width: 100%
-
-  .breadcrumb li
-    display: block
-    width: 100%
-    text-align: center
-
-.navbar
-  background: #fff
-  padding-top: 20px !important
-  padding-bottom: 20px !important
-  z-index: 9998
-  border-bottom: 1px solid #ddd
-
-  .langs a:first-of-type
-    margin-left: 20px
-    padding-left: 20px
-    border-left: 1px solid #ddd
-    height: 20px
-    line-height: 20px
-
-  .search-btn
-    margin-left: 20px
-    padding-left: 20px
-    border-left: 1px solid #ddd
-    height: 20px
-    line-height: 20px
-    color: #333
-    font-size: 0.9em
-
-  .navbar-toggler
-    margin-top: 5px
-
-    span
-      width: 20px
-      height: 2px
-      background: #000
-      margin-bottom: 4px
-      display: block
-
-      &:last-of-type
-        margin-bottom: 0
-
-    &.active span
-      margin: 0
-
-      &:first-of-type
-        -webkit-transform: rotate(45deg) translate(3px)
-        transform: rotate(45deg) translate(3px)
-
-      &:nth-of-type(2)
-        opacity: 0
-
-      &:last-of-type
-        -webkit-transform: rotate(-45deg) translate(3px)
-        transform: rotate(-45deg) translate(3px)
-
-  .langs
-    a
-      font-size: 0.8em
-      color: #aaa
-      font-weight: 700
-
-      &.active
-        color: #333
-
-    span
-      width: 15px
-      height: 1px
-      background: #ddd
-      margin: 0 5px
-
-  .search-area
-    display: none
-    z-index: 9999
-
-  .search-area-inner
-    position: fixed
-    top: 0
-    right: 0
-    width: 100vw
-    height: 100vh
-    background: rgba(255, 255, 255, 0.99)
-    padding: 20px !important
-
-    .close-btn
-      position: absolute
-      top: 20px
-      right: 20px
-
-    .row
-      width: 100%
-
-    .form-group
-      position: relative
-
-    .submit
-      background: none
-      border: none
-      position: absolute
-      right: 10px
-      bottom: 15px
-
-    input
-      width: 100%
-      border: none
-      border-bottom: 1px solid #ddd
-      background: none
-      padding: 10px 0
-      font-size: 1.6em
-      font-weight: 300
-      font-family: "Open Sans", sans-serif
-
-      &::-moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
-        font-family: "Open Sans", sans-serif
-        color: #555
-        font-weight: 300
-        font-size: 1.1em
-
-  .navbar-nav a.nav-link
-    color: #333
-    margin: 0 5px
-    font-weight: 400
-    font-size: 0.95em
-
-    &:hover
-      color: #999
-
-    &.active
-      color: #999
-      font-weight: bold
-
-@media (max-width: 991px)
-  nav.navbar
-    .navbar-header, &::after
-      width: 100%
-
-    &.active::after
-      width: calc(100% - 170px)
-
-    .search-area
-      font-size: 0.75em
 
 // section
 //   &.hero
@@ -765,94 +413,6 @@ section
       width: 100%
       margin-top: 10px
 
-footer.main-footer
-  background: #0e0e0e
-  padding: 100px 0 0
-  color: #fff
-
-  .contact-details
-    p
-      font-weight: 300
-      color: #fff
-      margin-bottom: 5px
-      font-size: 0.95em
-
-    a
-      text-decoration: underline
-      margin-bottom: 0
-
-  a
-    color: inherit
-    font-weight: 300
-    margin-bottom: 7px
-
-    &:hover, &:focus
-      color: #999
-
-  ul
-    margin-right: 30px
-
-  .list-unstyled a
-    font-size: 0.95em
-
-  .latest-posts
-    .image
-      max-width: 50px
-      padding: 4px
-      border: 2px solid #333
-      margin-right: 10px
-
-    a
-      font-size: 0.95em
-      text-decoration: none
-
-      &:hover
-        color: #fff
-
-    strong
-      display: block
-
-    .date
-      font-size: 0.85em
-      color: #aaa
-
-  .copyrights
-    background: #090909
-    margin-top: 100px
-    padding: 20px 0
-    font-size: 0.9em
-
-    *
-      margin-bottom: 0
-
-  .social-menu
-    margin-top: 20px
-
-    li
-      padding: 0 5px
-
-  .date::after, .title::after
-    display: none !important
-
-@media (max-width: 767px)
-  footer.main-footer
-    div[class*="col-"]
-      margin-bottom: 40px
-
-      &:last-of-type
-        margin-bottom: 0
-
-    .latest-posts > a
-      width: 100%
-      margin-bottom: 20px
-
-    .copyrights div[class*="col-"]
-      margin-bottom: 20px
-      text-align: center !important
-
-      &:last-of-type
-        margin-bottom: 0
-
 main.posts-listing
   padding-top: 50px
   padding-left: 0
@@ -864,126 +424,12 @@ main.posts-listing
   .post__footer
     font-size: 0.8em
 
-.widget
-  &.search
-    .form-group
-      position: relative
-
-    input
-      width: 100%
-      height: 40px
-      line-height: 40px
-      border: none
-      border-bottom: 1px solid #ddd
-      font-size: 0.95em
-      font-family: "Open Sans", sans-serif
-      font-weight: 400
-      background: none
-
-      &::-moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
-        color: #aaa
-        font-family: "Open Sans", sans-serif
-
-    .submit
-      height: 40px
-      padding: 0
-      line-height: 40px
-      background: none
-      border: none
-      color: #555
-      font-size: 0.9em
-      position: absolute
-      top: 0
-      right: 0
-
-  &.latest-posts
-    a
-      display: block
-      color: #555
-      text-decoration: none
-
-      &:hover
-        color: #000
-
-    .image
-      min-width: 60px
-      max-width: 60px
-      height: 60px
-      overflow: hidden
-      margin-right: 20px
-
-    .item
-      margin-bottom: 20px
-
-    strong
-      font-size: 0.95em
-      display: block
-      line-height: 1em
-
-    .views, .comments
-      font-size: 0.8em
-      font-weight: 400
-      color: #bbb
-      margin-top: 10px
-
-    .views i, .comments i
-      margin-right: 5px
-
-    .views::after
-      content: '|'
-      display: inline-block
-      margin: 0 7px
-      font-size: 0.9em
-      color: #ccc
-
-    .comments::after
-      content: '|'
-      display: inline-block
-      margin: 0 7px
-      font-size: 0.9em
-      color: #ccc
-      display: none
-
-  &.categories .item
-    background: #fafafa
-    padding: 10px
-    color: #777
-    font-weight: 700
-
-    &:nth-of-type(2n+2)
-      background: none
-
-    a
-      color: inherit
-      font-size: 0.95em
-
-      &:hover
-        color: #000
-        text-decoration: none
-
-    span
-      font-size: 0.9em
-      color: #aaa
-
-  &.tags .tag
-    padding: 5px 25px
-    border: 1px solid #ddd
-    margin: 5px 0
-    color: #777
-    font-size: 0.75em
-    text-transform: uppercase
-    font-weight: 600
-    text-decoration: none
-    border-radius: 50px
-
-    &:hover
-      background: #999
-      color: #fff
-      border-color: #999
-
 .blog-post
   padding-left: 0
   padding-right: 0
+
+  p, li
+    font-size: 1.375rem /* 22/16 */
 
   .post__footer
     font-size: 0.8em
@@ -1001,18 +447,37 @@ main.posts-listing
   .post-body
     margin-top: 40px
 
+    .table
+      td
+        &:first-child
+          width: 30%
+          text-align: right
+
     img
-      border-radius: 1.25rem /* 20/16 */
-      box-shadow: 1px 1px 99px #e2e2e2
       width: 100%
+
+    figure, img
+      box-shadow: none
+      margin-bottom: 1.875rem
+      background-color: #fff
+
+    figure
+      figcaption
+        display: block
+        padding: 15px 0
+        text-align: center
+        color: rgba(#000, .45)
+        font-size: 80%
+      img
+        margin-bottom: 0
 
     h2, h3, h4, h5, h6
       color: #333
 
     a
-      text-decoration: underline
+      border-bottom: 1px solid #999
       &:hover, &:focus
-        text-decoration: none
+        border-bottom-color: transparent
 
   .posts-nav
     margin-top: 50px
@@ -1115,7 +580,12 @@ main.posts-listing
       border-radius: 0
       font-family: "Open Sans", sans-serif
 
-    input::-moz-placeholder, textarea::-moz-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder
+    input::-moz-placeholder,
+    textarea::-moz-placeholder,
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder,
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder
       font-weight: 400
       font-size: 0.9em
       color: #aaa
@@ -1160,122 +630,6 @@ blockquote.blockquote
 
     .author
       margin-bottom: 10px
-
-#style-switch-button
-  position: fixed
-  top: 120px
-  left: 0px
-  border-radius: 0
-  z-index: 100000
-
-#style-switch
-  width: 300px
-  padding: 20px
-  position: fixed
-  top: 160px
-  left: 0
-  background: #fff
-  border: solid 1px #ced4da
-  z-index: 100000
-
-  h4
-    color: #495057
-
-  .text-small
-    font-size: .8em
-
-  select
-    font-size: 0.85em
-
-.navbar
-  padding: 0.5rem 1rem
-
-.navbar-brand
-  font-size: 1rem
-  margin: 0
-  a
-    color: #333
-    font-weight: 700
-
-.navbar-toggler
-  padding: 0.25rem 0.75rem
-  font-size: 1.25rem
-  line-height: 1
-  border: 1px solid transparent
-  border-radius: 0.25rem
-
-.navbar-light
-  .navbar-brand
-    color: rgba(0, 0, 0, 0.9)
-
-    &:focus, &:hover
-      color: rgba(0, 0, 0, 0.9)
-
-  .navbar-nav
-    .nav-link
-      color: rgba(0, 0, 0, 0.5)
-      &:focus, &:hover
-        color: rgba(0, 0, 0, 0.7)
-      &.disabled
-        color: rgba(0, 0, 0, 0.3)
-
-    .show > .nav-link, .active > .nav-link
-      color: rgba(0, 0, 0, 0.9)
-
-    .nav-link
-      &.show, &.active
-        color: rgba(0, 0, 0, 0.9)
-
-  .navbar-toggler
-    color: rgba(0, 0, 0, 0.5)
-    border-color: rgba(0, 0, 0, 0.1)
-
-  .navbar-toggler-icon
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-
-  .navbar-text
-    color: rgba(0, 0, 0, 0.5)
-
-.navbar-dark
-  .navbar-brand
-    color: white
-
-    &:focus, &:hover
-      color: white
-
-  .navbar-nav
-    .nav-link
-      color: rgba(255, 255, 255, 0.5)
-
-      &:focus, &:hover
-        color: rgba(255, 255, 255, 0.75)
-
-      &.disabled
-        color: rgba(255, 255, 255, 0.25)
-
-    .show > .nav-link, .active > .nav-link
-      color: white
-
-    .nav-link
-      &.show, &.active
-        color: white
-
-  .navbar-toggler
-    color: rgba(255, 255, 255, 0.5)
-    border-color: rgba(255, 255, 255, 0.1)
-
-  .navbar-toggler-icon
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-
-  .navbar-text
-    color: rgba(255, 255, 255, 0.5)
-
-
-.nav-link
-  small
-    opacity: 0.6
-    margin-right: 5px
-    display: inline-block
 
 .btn
   font-weight: normal
@@ -1828,36 +1182,6 @@ a.text-primary
     text-decoration: none
     background-color: #e9ecef
     border-color: #ddd
-
-.pagination-lg
-  .page-link
-    padding: 0.75rem 1.5rem
-    font-size: 1.25rem
-    line-height: 1.5
-
-  .page-item
-    &:first-child .page-link
-      border-top-left-radius: 0.3rem
-      border-bottom-left-radius: 0.3rem
-
-    &:last-child .page-link
-      border-top-right-radius: 0.3rem
-      border-bottom-right-radius: 0.3rem
-
-.pagination-sm
-  .page-link
-    padding: 0.25rem 0.5rem
-    font-size: 0.875rem
-    line-height: 1.5
-
-  .page-item
-    &:first-child .page-link
-      border-top-left-radius: 0.2rem
-      border-bottom-left-radius: 0.2rem
-
-    &:last-child .page-link
-      border-top-right-radius: 0.2rem
-      border-bottom-right-radius: 0.2rem
 
 .bg-primary
   background-color: #999 !important

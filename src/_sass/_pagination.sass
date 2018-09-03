@@ -1,0 +1,47 @@
+
+.pagination-template
+  li.page-item
+    margin: 0 5px
+
+  a.page-link
+    width: 40px
+    height: 40px
+    line-height: 40px
+    border-radius: 50% !important
+    background-color: $body-bg
+    border: none
+    text-align: center
+    color: #555
+    padding: 0
+    &:hover, &.active
+      background: darken($body-bg, 10%)
+
+.pagination-lg
+  .page-link
+    padding: 0.75rem 1.5rem
+    font-size: 1.25rem
+    line-height: 1.5
+
+  .page-item
+    &:first-child .page-link
+      border-top-left-radius: 0.3rem
+      border-bottom-left-radius: 0.3rem
+
+    &:last-child .page-link
+      border-top-right-radius: 0.3rem
+      border-bottom-right-radius: 0.3rem
+
+.pagination-sm
+  .page-link
+    padding: 0.25rem 0.5rem
+    font-size: 0.875rem
+    line-height: 1.5
+
+  .page-item
+    &:first-child .page-link
+      border-top-left-radius: 0.2rem
+      border-bottom-left-radius: 0.2rem
+
+    &:last-child .page-link
+      border-top-right-radius: 0.2rem
+      border-bottom-right-radius: 0.2rem

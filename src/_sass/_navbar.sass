@@ -1,0 +1,229 @@
+.navbar
+  background: #fff
+  padding-top: 20px !important
+  padding-bottom: 20px !important
+  z-index: 9998
+  border-bottom: 1px solid #ddd
+
+  .langs a:first-of-type
+    margin-left: 20px
+    padding-left: 20px
+    border-left: 1px solid #ddd
+    height: 20px
+    line-height: 20px
+
+  .search-btn
+    margin-left: 20px
+    padding-left: 20px
+    border-left: 1px solid #ddd
+    height: 20px
+    line-height: 20px
+    color: #333
+    font-size: 0.9em
+
+  .navbar-toggler
+    margin-top: 5px
+
+    span
+      width: 20px
+      height: 2px
+      background: #000
+      margin-bottom: 4px
+      display: block
+
+      &:last-of-type
+        margin-bottom: 0
+
+    &.active span
+      margin: 0
+
+      &:first-of-type
+        -webkit-transform: rotate(45deg) translate(3px)
+        transform: rotate(45deg) translate(3px)
+
+      &:nth-of-type(2)
+        opacity: 0
+
+      &:last-of-type
+        -webkit-transform: rotate(-45deg) translate(3px)
+        transform: rotate(-45deg) translate(3px)
+
+  .langs
+    a
+      font-size: 0.8em
+      color: #aaa
+      font-weight: 700
+
+      &.active
+        color: #333
+
+    span
+      width: 15px
+      height: 1px
+      background: #ddd
+      margin: 0 5px
+
+  .search-area
+    display: none
+    z-index: 9999
+
+  .search-area-inner
+    position: fixed
+    top: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(255, 255, 255, 0.99)
+    padding: 20px !important
+
+    .close-btn
+      position: absolute
+      top: 20px
+      right: 20px
+
+    .row
+      width: 100%
+
+    .form-group
+      position: relative
+
+    .submit
+      background: none
+      border: none
+      position: absolute
+      right: 10px
+      bottom: 15px
+
+    input
+      width: 100%
+      border: none
+      border-bottom: 1px solid #ddd
+      background: none
+      padding: 10px 0
+      font-size: 1.6em
+      font-weight: 300
+      font-family: "Open Sans", sans-serif
+
+      &::-moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
+        font-family: "Open Sans", sans-serif
+        color: #555
+        font-weight: 300
+        font-size: 1.1em
+
+  .navbar-nav a.nav-link
+    color: #333
+    margin: 0 5px
+    font-weight: 400
+    font-size: 0.95em
+
+    &:hover
+      color: #999
+
+    &.active
+      color: #999
+      font-weight: bold
+
+@media (max-width: 991px)
+  nav.navbar
+    .navbar-header, &::after
+      width: 100%
+
+    &.active::after
+      width: calc(100% - 170px)
+
+    .search-area
+      font-size: 0.75em
+
+.navbar
+  padding: 0.5rem 1rem
+
+  &-brand
+    font-size: 1.2rem
+    margin: 0
+    a
+      color: #333
+      font-weight: 700
+    small
+      display: block
+      opacity: .35
+      text-transform: uppercase
+      font-size: 0.81rem
+
+  &-toggler
+    padding: 0.25rem 0.75rem
+    font-size: 1.25rem
+    line-height: 1
+    border: 1px solid transparent
+    border-radius: 0.25rem
+
+  &-light
+    .navbar-brand
+      color: rgba(0, 0, 0, 0.9)
+
+      &:focus, &:hover
+        color: rgba(0, 0, 0, 0.9)
+
+    .navbar-nav
+      .nav-link
+        color: rgba(0, 0, 0, 0.5)
+        &:focus, &:hover
+          color: rgba(0, 0, 0, 0.7)
+        &.disabled
+          color: rgba(0, 0, 0, 0.3)
+
+      .show > .nav-link, .active > .nav-link
+        color: rgba(0, 0, 0, 0.9)
+
+      .nav-link
+        &.show, &.active
+          color: rgba(0, 0, 0, 0.9)
+
+    .navbar-toggler
+      color: rgba(0, 0, 0, 0.5)
+      border-color: rgba(0, 0, 0, 0.1)
+
+    .navbar-toggler-icon
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+
+    .navbar-text
+      color: rgba(0, 0, 0, 0.5)
+
+  &-dark
+    .navbar-brand
+      color: white
+
+      &:focus, &:hover
+        color: white
+
+    .navbar-nav
+      .nav-link
+        color: rgba(255, 255, 255, 0.5)
+
+        &:focus, &:hover
+          color: rgba(255, 255, 255, 0.75)
+
+        &.disabled
+          color: rgba(255, 255, 255, 0.25)
+
+      .show > .nav-link, .active > .nav-link
+        color: white
+
+      .nav-link
+        &.show, &.active
+          color: white
+
+    .navbar-toggler
+      color: rgba(255, 255, 255, 0.5)
+      border-color: rgba(255, 255, 255, 0.1)
+
+    .navbar-toggler-icon
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+
+    .navbar-text
+      color: rgba(255, 255, 255, 0.5)
+
+.nav-link
+  small
+    opacity: 0.6
+    margin-right: 5px
+    display: inline-block
