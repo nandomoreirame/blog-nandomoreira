@@ -70,7 +70,7 @@ O generator vai criar todo o _"start"_ do projeto pra você, sem reclamar ;)
 
 ## Raio-x do Gulp Boilerplate
 
-> "Mas afinal o que tem de especial nesse tal Gulp Boilerplate pra me fazer instalar e usar ele?""
+> "Mas afinal o que tem de especial nesse tal Gulp Boilerplate pra me fazer instalar e usar ele?"
 
 Calma jovem, vou listar abaixo todos os pacotes e as tasks do Gulp Boilerplate pra você não ficar ai todo curioso:
 
