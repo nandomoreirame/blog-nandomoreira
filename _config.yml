@@ -2,18 +2,15 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 12
-paginate_path: "/page/:num"
+paginate_path: '/page/:num'
 language: 'pt-br'
 
-source: "src"
-url: "https://blog.nandomoreira.me"
+source: 'src'
+url: 'https://blog.nandomoreira.me'
 
 # Website info
 title: Nando's blog
 description: Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba
-cover: assets/images/blog-cover.png
-logo: false
-favicon: assets/images/favicon.png
 
 # Social info
 github: nandomoreirame
