@@ -14,6 +14,12 @@ try {
   require('bootstrap')
 } catch (e) {}
 
+function updateProgressBar() {
+  let scrollSpace = document.body.scrollHeight - window.innerHeight
+  let read = window.scrollY / scrollSpace * 100
+  $('.bar').css({ 'width': `${read}%` })
+}
+
 (($) => {
   $(document).ready(() => {
     const observer = lozad('.lozad', {
@@ -21,12 +27,15 @@ try {
     })
     observer.observe()
   })
+
+  window.addEventListener('scroll', () => updateProgressBar() )
+  window.addEventListener('resize', () => updateProgressBar() )
+  updateProgressBar()
 })(jQuery)
 
 Vue.use(VueMasonryPlugin)
 Vue.component('cp-search-form', require('@/components/SearchForm.vue'))
 Vue.component('cp-error-404', require('@/components/Error404.vue'))
-Vue.component('cp-scroll-progress', require('@/components/ScrollProgress.vue'))
 
 new Vue({ // eslint-disable-line
   el: '#site'
