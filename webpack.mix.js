@@ -3,9 +3,9 @@
 
 const { join, resolve } = require('path')
 const mix = require('laravel-mix')
-// const { GenerateSW } = require('workbox-webpack-plugin')
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-// const pkg = require('./package.json')
+const { GenerateSW } = require('workbox-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const pkg = require('./package.json')
 const srcPath = join(__dirname, './')
 const destPath = join(srcPath, 'assets')
 const destCss = mix.inProduction() ? join(srcPath, '_includes') : srcPath
