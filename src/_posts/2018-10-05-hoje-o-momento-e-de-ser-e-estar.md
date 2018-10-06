@@ -46,7 +46,7 @@ Eles sempre voltam quando leio algo que me choca na internet ou quando estou len
 
 ## Não seja uma pessoa medíocre
 
-Não ser uma pessoa manipulada pela mídia é algo extremamente difícil e ir com a maioria é bem fácil que você faz no automático.
+Não ser uma pessoa manipulada pela mídia é algo extremamente difícil, ir com a maioria é bem fácil que você faz no automático.
 
 Todo mundo quer ser **FODA**, mas poucos agem para alcançar o seu ápice na vida.
 
