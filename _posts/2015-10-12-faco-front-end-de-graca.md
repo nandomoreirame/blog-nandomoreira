@@ -7,10 +7,13 @@ description: "É isso mesmo que você leu, Faço front-end de graça, mas tem al
 keywords: "front-end, frontend, html, css, free, freedom, job, projeto, open-source, open, source"
 categories: geral
 cover: assets/images/posts/2015/10/madruga.gif
+author: nandomoreira
 tags:
 - front-end
 - open-source
 - geral
+class: post-template
+subclass: post
 ---
 
 Você deve estar se perguntando: _**"Front-end de graça? Como assim?"**_

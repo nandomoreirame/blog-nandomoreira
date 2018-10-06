@@ -3,11 +3,11 @@
     method="get"
     class="search-form navbar-text my-2 my-lg-0">
     <div class="search-area" v-if="showInput" :style="`display: ${(showInput) ? 'block': 'none'};`">
-      <div class="search-area-inner d-flex align-items-center justify-content-center">
+      <div class="search-area-inner">
         <div class="close-btn" @click="toggleInput">
           <i class="mdi mdi-close"></i>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row">
           <div class="col-md-8">
             <div class="form-group">
               <input type="search" name="search" id="search" placeholder="What are you looking for?" autofocus>

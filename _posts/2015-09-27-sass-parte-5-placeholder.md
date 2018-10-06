@@ -6,13 +6,14 @@ date: 2015-09-27
 description: "Uma das funcionalidades mais legais do SASS é você poder criar placeholders para agrupamento de códigos repetidos"
 keywords: "sass, css, scss, pre-processador, pre-processadores"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
+subclass: post
 ---
 
 Nos artigos anteriores eu falei sobre _[Funções](/sass-parte-4-funcoes/)_ e sobre _[Mixins](/sass-parte-3-mixins/)_ do **SASS**, mas sem sombra de dúvidas, uma das funcionalidades mais legais do SASS (na minha opinião) é você poder criar _[placeholders](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_)_ para agrupamento de códigos repetidos.

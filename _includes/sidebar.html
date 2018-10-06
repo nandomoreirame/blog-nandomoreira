@@ -20,13 +20,13 @@
         <div class="blog-posts">
             {% for post in site.posts limit:5 %}
                 <a href="{{ post.url }}">
-                    <div class="item d-flex align-items-center">
+                    <div class="item">
                         <div class="image">
                             <img src="{{ post.cover | absolute_url }}" alt="{{ post.title }}" class="img-fluid">
                         </div>
                         <div class="title">
                             <strong>{{ post.title }}</strong>
-                            <div class="d-flex align-items-center">
+                            <div>
                                 <div class="views">
                                     <i class="icon-eye"></i> 500</div>
                                 <div class="comments">
@@ -43,23 +43,23 @@
         <header>
             <h3 class="h6">Categories</h3>
         </header>
-        <div class="item d-flex justify-content-between">
+        <div class="item">
             <a href="#">Growth</a>
             <span>12</span>
         </div>
-        <div class="item d-flex justify-content-between">
+        <div class="item">
             <a href="#">Local</a>
             <span>25</span>
         </div>
-        <div class="item d-flex justify-content-between">
+        <div class="item">
             <a href="#">Sales</a>
             <span>8</span>
         </div>
-        <div class="item d-flex justify-content-between">
+        <div class="item">
             <a href="#">Tips</a>
             <span>17</span>
         </div>
-        <div class="item d-flex justify-content-between">
+        <div class="item">
             <a href="#">Local</a>
             <span>25</span>
         </div>

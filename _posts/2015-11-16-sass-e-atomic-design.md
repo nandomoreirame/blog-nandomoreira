@@ -5,14 +5,14 @@ title: "SASS + Atomic design (parte 1)"
 date: 2015-11-16
 description: "SASS é um pré-processador incrível não acha? Mas muitos não sabem como organizar seus projetos com ele"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 **SASS** é um pré-processador incrível não acha? Mas muitos não sabem como organizar seus projetos com ele, nesse artigo vou lhe mostrar como organizar uma estrutura _"foda"_ usando **[SASS](http://sass-lang.com/)** e _**[Atomic Design](http://patternlab.io/about.html)**_, vem comigo.

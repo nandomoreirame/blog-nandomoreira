@@ -4,9 +4,10 @@ current: tag
 class: 'tag-template'
 ---
 
-<header class="page-header">
-    <div class="page-header__inner">
-        <h1 class="page-header__title">Tag: {{ page.tag }}</h1>
+<header class="postSingle__header {% unless page.cover %}postSingle__header--no-image{% endunless %}">
+    <div class="postSingle__headerInner">
+        <h4 class="postSingle__category">Tag:</h4>
+        <h1 class="postSingle__title">{{ page.tag }}</h1>
     </div>
 </header>
 

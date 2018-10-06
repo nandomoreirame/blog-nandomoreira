@@ -6,9 +6,12 @@ date: 2015-12-11
 description: "Essa é uma dica rápida para quem ama e trabalha com desenvolvimento de interfaces para o usuário"
 keywords: "dicas, extensões, criação, web, criativo, inspiração"
 cover: assets/images/posts/2015/12/panda-app-chrome-extension.png
+author: nandomoreira
 tags:
 - dicas
 - extensões
+class: post-template
+subclass: post
 ---
 
 Essa é uma dica rápida para os amantes da web, quem gosta, ama e trabalha com desenvolvimento de interfaces para o usuário.

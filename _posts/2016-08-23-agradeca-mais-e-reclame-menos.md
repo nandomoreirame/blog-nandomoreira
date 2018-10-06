@@ -5,9 +5,12 @@ title: "Reflexão: agradeça mais e reclame menos"
 description: "Você já parou pra pensar quantas vezes você reclama por dia, ou quantas vezes você reclamou hoje?"
 date: 2016-08-23
 cover: assets/images/posts/2016/08/thanks.gif
+author: nandomoreira
 categories: geral
 tags:
 - reflexao
+class: post-template
+subclass: post
 ---
 
 Você já parou pra pensar quantas vezes você reclama por dia, ou quantas vezes você reclamou hoje? Vamos lá, faça um teste! Você vai ficar surpreso em saber que reclamações fazem parte do nosso dia-a-dia e nem percebemos.

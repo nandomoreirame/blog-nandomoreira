@@ -6,9 +6,12 @@ date: 2015-12-10
 description: "Durante minha trajetória até aqui eu já trabalhei com alguns programadores e designers que discordariam completamente da minha opinião"
 keywords: "front-end, frontend, psd, reflexao"
 cover: assets/images/posts/2015/12/skate.gif
+author: nandomoreira
 categories: geral
 tags:
 - front-end
+class: post-template
+subclass: post
 ---
 
 > **Nota:** Eu pensei muito antes de escrever esse artigo, sério! Não sou muito bom em passar sermão ou dicas por textos, mas vamos lá...

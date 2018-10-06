@@ -5,6 +5,7 @@ title: Comece com Gulp!
 date: 2017-01-08
 description: Eu particularmente gosto muito de ganhar tempo com o desenvolvimento dos meus projetos e usar automatizador de tarefas me dá esse poder.
 cover: assets/images/posts/comece-com-gulp.png
+author: nandomoreira
 categories: gulp
 tags:
 - gulpjs
@@ -12,8 +13,7 @@ tags:
 - tasks
 - taskrunners
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Automatizadores de tarefas ou como são conhecidos pelo termo em inglês [Task Runners](https://goo.gl/Zugcvt), tem a capacidade de fazer muita coisa, facilitam muito não só no desenvolvimento dos projetos mas também nos builds e deploys, cara é simplesmente lindo.

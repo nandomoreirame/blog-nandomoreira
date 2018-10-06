@@ -5,6 +5,7 @@ title: "Usando categorias e tags no Jekyll"
 date: 2015-10-13
 description: "GitHub Pages serviço é simplesmente incrível! E com a integração Jekyll ele fica ainda mais impressionante! Mas existem algumas limitações neste grande sistema automatizado"
 cover: assets/images/posts/get-started-with-jekyll.jpg
+author: nandomoreira
 keywords: "jekyll, categorias, tags, blog"
 categories: jekyll
 tags:
@@ -12,8 +13,7 @@ tags:
 - gh-pages
 - jekyll
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 > Esse artigo foi traduzido de: [How to use tags and categories on github pages without plugins](http://www.minddust.com/post/tags-and-categories-on-github-pages/)

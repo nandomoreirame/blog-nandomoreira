@@ -6,14 +6,14 @@ date: 2015-09-05
 description: "Conhecendo o pré-processador SASS-Parte 4"
 keywords: "sass, css, scss, pre-processador, pre-processadores"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Esse artigo será bem rápido, vou falar sobre o recurso que deixa o **SASS** ainda mais com cara de linguagem de programação, são as **funções**.

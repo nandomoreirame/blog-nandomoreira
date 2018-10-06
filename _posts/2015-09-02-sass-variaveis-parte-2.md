@@ -6,14 +6,14 @@ date: 2015-09-02
 description: "Se você está começando agora no mundo do desenvolvimento você precisa ter uma base de como funciona variáveis."
 keywords: "sass, css, scss, pre-processador, pre-processadores, variáveis"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Vamos continuar nossa série **"Conhecendo o pré-processador SASS"**, mas agora falando de **Variáveis**.

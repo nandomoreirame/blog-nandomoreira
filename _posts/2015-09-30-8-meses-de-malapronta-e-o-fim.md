@@ -5,9 +5,12 @@ title: "8 meses de MalaPronta e o fim."
 date: 2015-09-30
 description: "Eu queria poder dizer que to feliz com tudo isso, mas não to. Eu amava trabalhar lá, apesar de muitas intrigas e desavenças, eu amava meu emprego."
 cover: assets/images/posts/2015/09/galera-do-porao-malapronta.jpg
+author: nandomoreira
 categories: geral
 tags:
 - geral
+class: post-template
+subclass: post
 ---
 
 Esse post não poderia começar melhor, com um "*I love U*" para MalaPronta.com, um ambiente descontraído com piadas ruins (mas que são boas) e uma sala que não é nem quente nem fria e nem escura ou clara(entendedores entenderão).

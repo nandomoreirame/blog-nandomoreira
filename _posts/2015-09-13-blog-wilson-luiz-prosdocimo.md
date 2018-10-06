@@ -6,8 +6,11 @@ date: 2015-09-13
 description: "Meu amigo Wilson gostou muito da ideia de poder publicar o blog dele no github usando Jekyll. Pode-se dizer que eu sou um “Evangelista do Jekyll” porque ele é um convertido da minha palavra."
 keywords: "jekyll, projeto, portfolio"
 cover: assets/images/posts/2015/09/wprosdocimo.jpg
+author: nandomoreira
 categories: sass
 tags: "jekyll, projeto, portfolio"
+class: post-template
+subclass: post
 ---
 
 Meu amigo Wilson gostou muito da ideia de poder publicar o blog dele no github usando Jekyll. Pode-se dizer que eu sou um “Evangelista do Jekyll” porque ele é um convertido da minha palavra. (huehuehue)

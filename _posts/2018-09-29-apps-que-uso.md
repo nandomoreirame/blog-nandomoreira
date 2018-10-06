@@ -9,8 +9,9 @@ tags:
 - dicas
 - apps
 cover: "assets/images/posts/apps-que-uso-google-chrome-canary.png"
+author: nandomoreira
 class: post-template
-subclass: 'post'
+subclass: post
 ---
 
 ![Criei essa lista de apps que uso todos os dias, espero que gostem](assets/images/posts/apps-que-uso-google-chrome-canary.png)

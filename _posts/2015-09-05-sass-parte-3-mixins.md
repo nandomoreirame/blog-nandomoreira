@@ -6,14 +6,14 @@ date: 2015-09-05-sass-parte-3-mixins.md.erb
 description: "Mixin foi definitivamente algo novo para mim, você consegue passar valores por parâmetros assim como funções"
 keywords: "sass, css, scss, pre-processador, pre-processadores"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 **Mixin** foi definitivamente algo novo para mim, você consegue passar valores por parâmetros assim como funções, a diferença é que uma função retorna apenas 1 único valor e mixin retorna um bloco inteiro de CSS.

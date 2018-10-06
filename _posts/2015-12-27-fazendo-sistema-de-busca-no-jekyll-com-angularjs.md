@@ -5,6 +5,7 @@ title: "Fazendo um sistema de busca simples no Jekyll usando AngularJS"
 date: 2015-12-27 22:28:33
 description: "Por alguns meses eu usei o plugin Simple Jekyll Search que funcionou muito bem no meu blog"
 cover: assets/images/posts/angularjs.png
+author: nandomoreira
 keywords: "jekyll, angular, angularjs"
 categories: jekyll
 tags:
@@ -12,8 +13,7 @@ tags:
 - angular
 - angularjs
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Por alguns meses eu usei o plugin [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search) que funcionou muito bem no meu blog, mas agora ele foi totalmente feito em angular e ficou uma maravilha.

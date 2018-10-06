@@ -5,14 +5,14 @@ title: "#1 - Conhecendo o pré-processador SASS | Instalação"
 date: 2015-09-01
 description: "Todo desenvolvedor web deveria conhecer algum pré-processador CSS, seja ele Less, SASS, Stylus ou qualquer outro"
 cover: assets/images/posts/conhecendo-o-pre-processador-sass.jpg
+author: nandomoreira
 categories: sass
 tags:
 - sass
 - css
 - pre-processador
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Na minha opinião todo desenvolvedor web deveria conhecer algum pré-processador CSS, seja ele `Less`, `SASS`, `Stylus` ou qualquer outro.

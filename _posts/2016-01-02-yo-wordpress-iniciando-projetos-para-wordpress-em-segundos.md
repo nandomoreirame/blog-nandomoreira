@@ -5,6 +5,7 @@ title: "YeoPress, iniciando projetos WordPress em segundos"
 date: 2016-01-02
 description: "Sim, existe um Generator para WordPress, o YeoPress faz o download do WP e inicia uma estrutura complata pra você já sair codificando o seu projeto"
 cover: assets/images/posts/yo-wordpress-command.png
+author: nandomoreira
 categories: yeoman
 tags:
 - yeoman
@@ -12,8 +13,7 @@ tags:
 - npm
 - wordpress
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Esse é o meu primeiro artigo do ano de **2016**, então eu vou falar sobre **[Yeoman](http://yeoman.io/)** e o <abbr title="Content Management System">CMS</abbr> mais usado do mundo, o **[WordPress](https://wordpress.org/)**.

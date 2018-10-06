@@ -6,14 +6,14 @@ date: 2016-09-24 04:25:39
 comments: true
 description: "O Google Chrome em uma de suas atualizações implementou o tema “Dark” para o Chrome DevTools."
 cover: assets/images/posts/chrome-devtools-dark.png
+author: nandomoreira
 categories: dicas
 tags:
  - dicas
  - chrome
  - devtools
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 O [Google Chrome](https://www.google.com/chrome/) em uma de suas atualizações implementou o tema _"Dark"_ para o _Chrome DevTools_. Isso já faz uns 7 a 8 meses mais ou menos (eu acho), mas estou escrevendo esse pequeno artigo pra avisar os que ainda estão desavisados.

@@ -6,6 +6,9 @@ date: 2016-12-27
 description: Trabalhar como um time é elevar o projeto a um nível superior, que nem mesmo você nem seus superiores imaginariam chegar, mas só conseguiram chegar lá porque viram a necessidade de trabalhar em equipe.
 categories: geral
 cover: assets/images/posts/2016/12/lojaskd-team-it.jpeg
+author: nandomoreira
+class: post-template
+subclass: post
 ---
 
 **TRABALHAR COMO UM TIME...**

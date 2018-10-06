@@ -10,8 +10,9 @@ tags:
 - php
 description: "A dica hoje será bem rápida, iremos testar erros na função wp_mail() no WordPress usando hooks."
 cover: assets/images/posts/wp_mail_faild-hook-function.png
+author: nandomoreira
 class: post-template
-subclass: 'post'
+subclass: post
 
 ---
 Sabemos que da pra fazer bastante coisa no WordPress usando os famosos hooks e sabemos também que é impossível saber o retorno de um erro ao tentar enviar um email usando a função wp_mail(), pois ela só retorna valores booleanos (true ou false).

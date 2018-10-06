@@ -5,13 +5,13 @@ date: 2017-11-05
 title: "Criando um blog com Vue.js - Parte 1: O Nuxt.js"
 description: "Essa é a parte 1 de uma série onde iremos usar a tecnologia SSR (Server Side Rendering) para criar um blog e no final hospeda-lo no GitHub pages e no Netlify."
 cover: assets/images/posts/criando-um-blog-com-javascript-vuejs.jpg
-class: post-template
+author: nandomoreira
 categories: vue
 tags:
 - vue
 - javascript
-subclass: 'post'
-
+class: post-template
+subclass: post
 ---
 
 ## Introdução

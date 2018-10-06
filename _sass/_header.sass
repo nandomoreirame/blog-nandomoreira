@@ -1,0 +1,42 @@
+.header
+  position: relative
+  width: 100%
+  background: #fff
+  -webkit-font-smoothing: subpixel-antialiased
+  -moz-osx-font-smoothing: auto
+  padding: .9375rem /* 15/16 */ 1.875rem /* 30/16 */
+  margin-bottom: 1.875rem /* 30/16 */
+  text-align: center
+  @media (min-width: 769px)
+    text-align: left
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__brand
+    font-size: 1.75rem /* 28/16 */
+    text-transform: uppercase
+    margin: 0 0 1.875rem /* 30/16 */
+    @media (min-width: 769px)
+      margin: 0
+    small
+      display: block
+      font-size: 1rem /* 16/16 */
+      opacity: 0.5
+  &--cloned
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 999
+    transition: all .2s ease-in-out
+    transform: translate3d(0, -150%, 0)
+    @media (max-width: 769px)
+      .header__brand
+        margin: 0
+      .navbar
+        display: none
+  &--show
+    transform: translate3d(0, 0, 0)
+
+body.post-template .header
+  margin-bottom: 0

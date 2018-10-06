@@ -10,8 +10,7 @@ date: 2014-07-13 15:57:09
 categories: wordpress
 tags: [iniciantes, odin, php, wordpress]
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 ![Criando formulário de contato para Wordpress com Odin Framework](/assets/images/posts/criando-formulario-de-contato-para-wordpress-com-odin-framework.png)

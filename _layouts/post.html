@@ -1,90 +1,111 @@
 ---
 layout: default
 current: post
-class: post-template
 disqus: true
 ---
 
-<div class="progress">
-    <div class="bar"></div>
-</div>
+<div class="progress"><div class="bar"></div></div>
 
 <main id="site-main" class="container" role="main">
-    <div class="post blog-post justify-content-center d-flex">
-        <article class="col-md-9 post-single {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+    <article class="postSingle postSingle--{{ page.subclass }}">
 
-            <header class="post-single-header">
-                <div class="post__meta mb-4 d-flex align-items-center flex-column flex-sm-row">
-                    <div class="post__author d-flex align-items-center flex-wrap">
-                        <div class="post__avatar">
-                            <img src="{{ "/assets/images/avatar.png" | absolute_url }}" alt="Post by Fernando Moreira" class="img-fluid">
-                        </div>
-                        <div class="title">
-                            <span>by Fernando Moreira</span>
-                        </div>
+        <header class="postSingle__header {% if page.cover %}postSingle__header--image{% endif %}" {% if page.cover %}style="background-image: url({{ page.cover | absolute_url }});"{% endif %}>
+            <div class="postSingle__headerInner">
+                <h4 class="postSingle__category">
+                    Categoria:
+                    {% for category in page.categories %}
+                        {% if forloop.index == page.categories.size %}
+                           <a href='{{ site.baseurl }}/categoria/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>
+                        {% else %}
+                           <a href='{{ site.baseurl }}/categoria/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>,
+                        {% endif %}
+                    {% endfor %}
+                </h4>
+                <h1 class="postSingle__title">{{ page.title }}</h1>
+                <div class="postSingle__meta">
+                    {% for author in site.data.authors %}
+                        {% if author[1].username == page.author %}
+                            {% if author[1].picture %}
+                                <figure class="author-avatar">
+                                    <a href="/autor/{{ page.author }}"><img class="author-profile-image" src="{{ author[1].picture | absolute_url }}" alt="{{ page.author }}"></a>
+                                </figure>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    <div class="">
+                        {% for author in site.data.authors %}
+                            {% if author[1].username == page.author %}
+                                <div class="author-name">Escrito por <a href="/autor/{{ page.author }}">{{ author[1].name }}</a></div>
+                            {% endif %}
+                        {% endfor %}
+                        <ul>
+                            <li class="post-date">
+                                <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B, %Y" }}
+                            </li>
+                            <li>{% include post-readingtime.erb %}</li>
+                            <li class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}/">0</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="d-flex align-items-center flex-wrap">
-                        <div class="date">
-                            <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B, %Y" }}
-                        </div>
-                        {% include post-readingtime.erb %}
-                        <div class="category">
-                            <i class="fas fa-folder-open"></i>
-                            {% for category in page.categories %}
-                                {% if forloop.index == page.categories.size %}
-                                   <a href='{{ site.baseurl }}/categoria/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>
-                                {% else %}
-                                   <a href='{{ site.baseurl }}/categoria/{{ category | downcase | replace: ' ', '-' }}/'>{{ category | upcase }}</a>,
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                        <div class="comments meta-last">
-                            <i class="fa fa-comment"></i>
-                            <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}/">0</span>
-                        </div>
-                    </div>
-                </div>
-                <h1 class="post-single-title">{{ page.title }}</h1>
-            </header>
-
-            <!-- {% if page.cover %}
-                <figure class="post-single-image post__thumbnail">
-                    <img src="{{ page.cover | absolute_url }}" alt="{{ page.title }}">
-                </figure>
-            {% endif %} -->
-
-            <div class="post__details">
-                <div class="post-body">
-                    {{ content }}
                 </div>
             </div>
+        </header>
+
+        <!-- {% if page.cover %}
+            <figure class="postSingle__image post__thumbnail">
+                <img src="{{ page.cover | absolute_url }}" alt="{{ page.title }}">
+            </figure>
+        {% endif %} -->
+
+        <div class="postSingle__body">
+            {{ content }}
 
             {% if page.tags.size > 0 %}
-                <div class="post__tags">
+                <div class="postSingle__tags">
                     {% for tag in page.tags %}
-                        <a class="post__tag" href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>#{{ tag | upcase }}</a>
+                        <a class="postSingle__tag" href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>#{{ tag | upcase }}</a>
                     {% endfor %}
                 </div>
             {% endif %}
 
-            <div class="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row">
+            <!-- {% include related.html %} -->
+
+            {% for author in site.data.authors %}
+                {% if author[1].username == page.author %}
+                    <aside class="authorCard">
+                        {% if author[1].picture %}
+                            <figure class="authorCard__image">
+                                <a href="/autor/{{ page.author }}"><img src="{{ author[1].picture }}" alt="{{ page.author }}"></a>
+                            </figure>
+                        {% endif %}
+                        <div class="authorCard__content">
+                            <h4 class="authorCard__name"><a href="/autor/{{ page.author }}">{{ author[1].name }}</a></h4>
+                            <p class="authorCard__bio">{{ author[1].bio }} <br><a href="/autor/{{ page.author }}">mais artigos desse autor.</a></p>
+                        </div>
+                    </aside>
+                {% endif %}
+            {% endfor %}
+
+            <div class="postSingle__nav">
                 {% if page.previous.url %}
-                    <a href="{{ page.previous.url }}" class="prev-post text-left d-flex align-items-center">
+                    <a href="{{ page.previous.url }}" class="prev-post">
                         <div class="icon prev">
                             <i class="fa fa-angle-left"></i>
                         </div>
                         <div class="text">
-                            <strong class="text-primary">Artigo anterior</strong>
-                            <h6 class="my-0">{{page.previous.title}}</h6>
+                            <strong>Artigo anterior</strong>
+                            <h6>{{page.previous.title}}</h6>
                         </div>
                     </a>
                 {% endif %}
 
                 {% if page.next.url %}
-                    <a href="{{page.next.url}}" class="next-post text-right d-flex align-items-center justify-content-end">
+                    <a href="{{page.next.url}}" class="next-post">
                         <div class="text">
-                            <strong class="text-primary">Próximo artigo</strong>
-                            <h6 class="my-0">{{page.next.title}}</h6>
+                            <strong>Próximo artigo</strong>
+                            <h6>{{page.next.title}}</h6>
                         </div>
                         <div class="icon next">
                             <i class="fa fa-angle-right"></i>
@@ -92,17 +113,15 @@ disqus: true
                     </a>
                 {% endif %}
             </div>
-        </article>
-    </div>
+        </div>
+    </article>
 </main>
 
 {% if jekyll.environment == "production" %}
     {% if site.disqus or page.disqus %}
-        <div class="mt-4 pt-4 mb-4 pb-4 container">
-            <div class="blog-post justify-content-center d-flex">
-                <div class="post-single-comments col-md-9 p-5">
-                    <div id="disqus_thread"></div>
-                </div>
+        <div class="comments">
+            <div class="comments__inner">
+                <div id="disqus_thread"></div>
             </div>
         </div>
     {% endif %}

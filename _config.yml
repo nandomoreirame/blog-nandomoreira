@@ -6,10 +6,11 @@ paginate_path: '/page/:num'
 language: 'pt-br'
 
 url: 'https://blog.nandomoreira.me'
+baseurl: ''
 
 # Website info
 title: Nando's blog
-description: Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba
+description: Vivendo minimamente
 
 # Social info
 github: nandomoreirame

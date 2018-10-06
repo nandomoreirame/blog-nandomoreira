@@ -6,14 +6,14 @@ date: 2015-09-26
 description: "Gulp 4 não foi liberado ainda e se você não pode esperar para colocar suas mãos sobre ele, aqui vai como instalar o Gulp 4."
 keywords: "node, gulp, gulpjs, instalacao"
 cover: assets/images/posts/comece-com-gulp.png
+author: nandomoreira
 categories: sass
 tags:
 - node
 - gulp
 - instalação
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Gulp 4 não foi liberado ainda e se você não pode esperar para colocar suas mãos sobre ele, aqui vai como instalar o Gulp 4.

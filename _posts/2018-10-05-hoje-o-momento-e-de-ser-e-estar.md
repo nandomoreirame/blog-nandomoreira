@@ -12,8 +12,9 @@ tags:
 - motivação
 - reflexões
 cover: assets/images/posts/2018-10-05-hoje-o-momento-e-de-ser-e-estar.jpg
+author: nandomoreira
 class: post-template
-subclass: 'post'
+subclass: post
 ---
 
 Música para esse artigo é: **"Deriram" de Natiruts**, [ouça aqui](https://open.spotify.com/track/7tOXrVF1kPuf8lLXCfBywn).

@@ -4,14 +4,53 @@ import lozad from 'lozad'
 import { VueMasonryPlugin } from 'vue-masonry'
 
 window._ = require('lodash')
-window.Popper = require('popper.js').default
+// window.Popper = require('popper.js').default
 window.Vue = Vue
 window.axios = axios
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
 try {
   window.$ = window.jQuery = require('jquery')
-  require('bootstrap')
+  // require('bootstrap')
+
+  (function ($) {
+    $('.header')
+      .addClass('header--original')
+      .clone()
+      .appendTo('body')
+      .addClass('header--cloned')
+      .removeClass('header--original');
+
+    var iScrollPos = 0;
+
+    $(window).scroll(function () {
+      var orgElementPos = $('.header--original').offset();
+      var orgElementTop = orgElementPos.top;
+      var windowPosition = $(this).scrollTop();
+
+      if (windowPosition >= (orgElementTop + $('.header--original').height())) {
+        if(windowPosition > iScrollPos) {
+          $('.header--cloned')
+            .removeClass('header--show');
+        } else {
+          $('.header--cloned')
+            .addClass('header--show');
+        }
+
+        iScrollPos = windowPosition;
+
+        $('.header--original')
+          .css({ 'visibility':'hidden' });
+
+      } else {
+        $('.header--cloned')
+          .removeClass('header--show');
+
+        $('.header--original')
+          .css({ 'visibility':'visible' });
+      }
+    });
+  })(jQuery);
 } catch (e) {}
 
 function updateProgressBar() {

@@ -1,0 +1,154 @@
+.postSingle
+  &__title
+    color: #fff
+    margin-top: 0
+    // text-transform: capitalize
+    font-size: 1.875rem /* 30/16 */
+    line-height: 2.5rem /* 40/16 */
+    @media (min-width: 769px)
+      font-size: 2.625rem /* 42/16 */
+      line-height: 3.25rem /* 52/16 */
+  &__headerInner
+    position: relative
+    z-index: 2
+    @extend .site-main
+  &__header
+    padding-top: 7.5rem /* 120/16 */
+    padding-bottom: 7.5rem /* 120/16 */
+    margin-bottom: 3.75rem /* 60/16 */
+    a
+      color: rgba(#fff, .75)
+      font-weight: 700
+      border-bottom-color: rgba(#fff, .75)
+    &--no-image
+      background-color: #323232
+    &--image
+      background-repeat: no-repeat
+      background-position: 50%
+      background-size: cover
+      position: relative
+      &:before
+        content: ''
+        display: block
+        opacity: 0.85
+        background-color: #323232
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 1
+      .postSingle__title
+        color: #fff
+  &__category
+    font-weight: 400
+    font-size: 1.375rem /* 22/16 */
+    text-transform: uppercase
+    color: #fff
+    margin: 0
+    @media (min-width: 769px)
+      font-size: 1.625rem /* 26/16 */
+  &__meta
+    display: flex
+    align-items: center
+    color: #fff
+    ul
+      list-style: none
+      margin: 5px 0 0 0
+      padding: 0
+    li
+      display: inline-block
+      margin-right: .3125rem /* 5/16 */
+      font-weight: 400
+    .author-avatar
+      margin: 0 .9375rem /* 15/16 */ 0 0
+      a
+        border: none
+      img
+        width: 6.25rem /* 100/16 */
+  &__body
+    @extend .site-main
+    // .postSingle
+    img
+      max-width: 100%
+      display: block
+      height: auto
+      margin-bottom: .9375rem /* 15/16 */
+
+  &__tags
+    margin: 1.875rem /* 30/16 */ 0
+
+  &__tag
+    padding: .3125rem /* 5/16 */ 1.5625rem /* 25/16 */
+    border: 1px solid #ddd
+    margin: .3125rem /* 5/16 */ .625rem /* 10/16 */ .3125rem /* 5/16 */ 0
+    color: #777
+    font-size: 0.75em
+    text-transform: uppercase
+    font-weight: 600
+    text-decoration: none
+    border-radius: 3.125rem /* 50/16 */
+    background: #fff
+    &:hover
+      background: #999
+      color: #fff
+      border-color: #999
+
+  &__nav
+    margin-top: 50px
+    color: #777
+    font-size: .8em
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+    h6
+      margin: 0
+      font-size: 1.375rem /* 22/16 */
+    a
+      display: flex
+      align-items: center
+      color: inherit
+      width: 50%
+      padding: .625rem /* 10/16 */ 1.25rem /* 20/16 */
+      border: 1px solid transparent
+      margin-bottom: .9375rem /* 15/16 */
+      text-align: left
+      .text
+        width: 90%
+      &:hover
+        border-color: #999
+        .icon
+          color: #fff
+          background: #999
+          border-color: #999
+      &.prev-post
+        justify-content: flex-start
+      &.next-post
+        justify-content: flex-end
+        text-align: right
+    .icon
+      width: 35px
+      // height: 35px
+      display: inline-block
+      border-radius: 50%
+      line-height: 32px
+      border: 1px solid #ddd
+      color: #aaa
+      font-size: 1.5em
+      text-align: center
+      transition: all .2s
+      &.prev
+        margin-right: 1.25rem /* 20/16 */
+      &.next
+        margin-left: 1.25rem /* 20/16 */
+
+.comments
+  @extend .site-main
+  padding: 30px
+  margin: 3.75rem /* 60/16 */ auto
+  &__inner
+    padding: 30px
+    background-color: #fff

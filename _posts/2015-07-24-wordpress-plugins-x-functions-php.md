@@ -4,6 +4,7 @@ current: post
 title: "Wordpress - plugins x functions.php"
 date: 2015-07-24
 description: "Muitos amigos e colegas de trabalho sempre me perguntam porque eu sou contra o uso de plugins no Wordpress."
+author: nandomoreira
 cover: assets/images/posts/wordpress-plugins-x-functions-php.jpg
 keywords: "wordpress, plugins, funcoes, php, dicas"
 categories: wordpress
@@ -12,8 +13,7 @@ tags:
 - dicas
 - php
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 Muitos amigos e colegas de trabalho sempre me perguntam porque eu sou contra o uso de plugins no Wordpress.

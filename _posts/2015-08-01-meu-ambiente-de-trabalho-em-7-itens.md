@@ -6,14 +6,14 @@ date: 2015-08-01
 description: "Aderi ao GNU linux como OS padrão no final de 2014, apesar de usá-lo desde 2009."
 keywords: "trabalho, ambiente, desenvolvimento, dicas"
 cover: assets/images/posts/meu-ambiente-de-trabalho-em-7-itens.png
+author: nandomoreira
 categories: workspace
 tags:
 - workspace
 - ambiente
 - desenvolvimento
 class: post-template
-subclass: 'post'
-
+subclass: post
 ---
 
 ![Meu ambiente de trabalho em 7 itens](/assets/images/posts/meu-ambiente-de-trabalho-em-7-itens.png)
