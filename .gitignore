@@ -83,5 +83,5 @@ sw.js
 wb-manifest.*
 mix-manifest.json
 webpack-report.html
-src/assets/scripts
+assets/scripts
 bundle.css

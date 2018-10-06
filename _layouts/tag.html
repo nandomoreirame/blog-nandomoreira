@@ -1,0 +1,16 @@
+---
+layout: default
+current: tag
+class: 'tag-template'
+---
+
+<header class="page-header">
+    <div class="page-header__inner">
+        <h1 class="page-header__title">Tag: {{ page.tag }}</h1>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer container" role="main">
+    {%  include post-list.html %}
+    {%  include paginator.html %}
+</main>

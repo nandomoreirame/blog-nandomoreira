@@ -15,8 +15,8 @@
   },
   "bugs": "https://github.com/nandomoreirame/blog.nandomoreira.me/issues",
   "scripts": {
-    "clean:sw": "rimraf src/wb-manifest.* && rimraf src/sw.js && rimraf src/webpack-report.html",
-    "clean": "npm run clean:sw && rimraf ./src/_includes/css && rimraf ./src/assets/scripts",
+    "clean:sw": "rimraf wb-manifest.* && rimraf sw.js && rimraf webpack-report.html",
+    "clean": "npm run clean:sw && rimraf ./_includes/css && rimraf ./assets/scripts",
     "dev": "npm run development",
     "development": "npm run clean && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",

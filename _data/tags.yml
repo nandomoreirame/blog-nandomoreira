@@ -1,0 +1,42 @@
+geral:
+  name: Geral
+  description: Some of the greatest words ever spoken.
+dicas:
+  name: Dicas
+  description: Some of the greatest words ever spoken.
+css:
+  name: CSS
+  description: Some of the greatest words ever spoken.
+gulp:
+  name: Gulp
+  description: Some of the greatest words ever spoken.
+jekyll:
+  name: Jekyll
+  description: Some of the greatest words ever spoken.
+php:
+  name: PHP
+  description: Some of the greatest words ever spoken.
+rails:
+  name: Ruby on Rails
+  description: Some of the greatest words ever spoken.
+sass:
+  name: SASS
+  description: Some of the greatest words ever spoken.
+vida:
+  name: Vida
+  description: Some of the greatest words ever spoken.
+vue:
+  name: Vue.js
+  description: Some of the greatest words ever spoken.
+wordpress:
+  name: WordPress
+  description: Some of the greatest words ever spoken.
+workspace:
+  name: WorkSpace
+  description: Some of the greatest words ever spoken.
+yeoman:
+  name: Yeoman
+  description: Some of the greatest words ever spoken.
+iniciantes:
+  name: iniciantes
+  description: Some of the greatest words ever spoken.
