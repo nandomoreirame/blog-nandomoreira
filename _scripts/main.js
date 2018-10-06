@@ -9,9 +9,15 @@ window.Vue = Vue
 window.axios = axios
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
+var anchorJS = require('anchor-js');
+var anchors = new anchorJS();
+
 try {
   window.$ = window.jQuery = require('jquery')
   // require('bootstrap')
+
+  anchors.options.placement = 'left';
+  anchors.add('.postSingle__body > h2, .postSingle__body > h3, .postSingle__body > h4, .postSingle__body > h5, .postSingle__body > h6');
 
   (function ($) {
     $('.header')

@@ -1,0 +1,37 @@
+.postCard
+  float: left
+  padding: 0 .9375rem /* 15/16 */
+  margin-bottom: 1.875rem /* 30/16 */
+  width: 100%
+  @media (min-width: 769px)
+    width: percentage(1/2)
+  &__inner
+    width: 100%
+    background-color: #fff
+    display: block
+    border: none
+  &__thumbnail
+    margin: 0 0 .9375rem /* 15/16 */
+    padding: 0
+    &, img
+      display: block
+      width: 100%
+      height: auto
+  &__footer,
+  &__details
+    padding: 0 1.25rem /* 20/16 */
+  &__description
+    margin-top: .3125rem /* 5/16 */
+    font-size: .875rem /* 14/16 */
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 1.25rem /* 20/16 */
+  &__title
+    color: #000
+    font-size: 1.25rem /* 20/16 */
+    line-height: 1.2
+    letter-spacing: .04em
+    text-transform: none
+    margin: 0

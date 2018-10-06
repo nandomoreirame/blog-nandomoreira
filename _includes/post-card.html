@@ -1,11 +1,11 @@
-<article class="postlist__item" v-masonry-tile>
-    <a class="postlist__card" href="{{ post.url }}" title="{{ post.title }}">
-        <figure class="postlist__thumbnail">
+<article class="postCard" v-masonry-tile>
+    <a class="postCard__inner" href="{{ post.url }}" title="{{ post.title }}">
+        <figure class="postCard__thumbnail">
             <img src="{{ post.cover | absolute_url }}" alt="{{ post.title }}">
         </figure>
-        <header class="postlist__details">
-            <div class="postlist__meta">
-                <div class="postlist__category">
+        <header class="postCard__details">
+            <div class="postCard__meta">
+                <div class="postCard__category">
                     {% for category in post.categories %}
                         {% if forloop.index == post.categories.size %}
                            {{ category | upcase }}
@@ -15,8 +15,8 @@
                     {% endfor %}
                 </div>
             </div>
-            <h1 class="postlist__title">{{ post.title }}</h1>
-            <p class="postlist__description">
+            <h1 class="postCard__title">{{ post.title }}</h1>
+            <p class="postCard__description">
                 {% if post.description %}
                     {{ post.description }}
                 {% else %}
@@ -24,12 +24,12 @@
                 {% endif %}
             </p>
         </header>
-        <footer class="postlist__footer">
-            <span class="postlist__date">
+        <footer class="postCard__footer">
+            <span class="postCard__date">
                 <i class="far fa-calendar-alt"></i>
                 {{ post.date | date: "%B, %Y" }}
             </span>
-            <span class="postlist__view">
+            <span class="postCard__view">
                 Ver post <i class="fas fa-long-arrow-alt-right"></i>
             </span>
         </footer>

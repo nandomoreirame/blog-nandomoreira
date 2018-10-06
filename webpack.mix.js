@@ -52,15 +52,11 @@ if (mix.inProduction()) {
         runtimeCaching: [{
           urlPattern: new RegExp(`${pkg.homepage}`),
           handler: 'networkFirst',
-          options: {
-            cacheName: `${pkg.name}-${pkg.version}`
-          }
+          options: { cacheName: `${pkg.name}-${pkg.version}` }
         }, {
           urlPattern: new RegExp('https://fonts.(googleapis|gstatic).com'),
           handler: 'cacheFirst',
-          options: {
-            cacheName: 'google-fonts'
-          }
+          options: { cacheName: 'google-fonts' }
         }]
       }),
       new BundleAnalyzerPlugin({

@@ -5,6 +5,9 @@ paginate: 12
 paginate_path: '/page/:num'
 language: 'pt-br'
 
+kramdown:
+  auto_ids: true
+
 url: 'https://blog.nandomoreira.me'
 baseurl: ''
 

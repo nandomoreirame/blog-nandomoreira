@@ -65,7 +65,7 @@ strong
 
 hr
   border: none
-  border-bottom: 4px solid rgba(#313131, .1)
+  border-bottom: 4px solid rgba(#000, .1)
   margin: 3.75rem /* 60/16 */ 0
   width: 60px
 
@@ -100,19 +100,19 @@ blockquote
   &:after
     content: "''"
     font: italic 25rem Arial,Serif,Georgia,serif
-    color: rgba(#323232, 0.05)
+    color: rgba(#000, 0.05)
     position: absolute
     top: -80px
     left: -70px
     z-index: 0
   small
     display: block
-    color: lighten(#323232, 25%)
+    color: lighten(#000, 25%)
     &:before
       content: ' ⏤ '
   p
     font: italic 1.65rem/1.5 Georgia,Times,serif
-    color: #323232
+    color: #000
     margin: 0
     position: relative
     font-size: 1.5rem
@@ -123,3 +123,4 @@ blockquote
   padding-left: 1.875rem /* 30/16 */
   padding-right: 1.875rem /* 30/16 */
   max-width: $container-width
+  @extend %clearfix
