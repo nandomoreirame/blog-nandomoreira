@@ -98,25 +98,29 @@
       border-color: #999
 
   &__nav
-    margin-top: 50px
     color: #777
     font-size: .8em
-    display: flex
-    flex-direction: row
-    align-items: stretch
-    justify-content: space-between
+    display: block
+    margin-top: 50px
+    @media (min-width: 769px)
+      display: flex
+      flex-direction: row
+      align-items: stretch
+      justify-content: space-between
     h6
       margin: 0
       font-size: 1.375rem /* 22/16 */
     a
-      display: flex
-      align-items: center
       color: inherit
-      width: 50%
       padding: .625rem /* 10/16 */ 1.25rem /* 20/16 */
       border: 1px solid transparent
       margin-bottom: .9375rem /* 15/16 */
       text-align: left
+      display: flex
+      align-items: center
+      width: 100%
+      @media (min-width: 769px)
+        width: 50%
       .text
         width: 90%
       &:hover

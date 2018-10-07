@@ -10,6 +10,7 @@ author: nandomoreira
 categories: dicas
 tags:
  - dicas
+ - google
  - chrome
  - devtools
 class: post-template

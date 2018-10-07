@@ -14,10 +14,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 {% endif %}
 
+<div id="top" class="skip">
+    <a href="#site-main" class="sr-only sr-only--focusable">Pular para conteúdo principal</a>
+</div>
+
 <div id="site">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
+
+    <div class="gototop">
+        <a href="#top">Voltar para o topo</a>
+    </div>
 </div>
 
 {% include scripts.html %}

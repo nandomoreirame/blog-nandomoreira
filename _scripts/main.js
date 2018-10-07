@@ -48,12 +48,17 @@ try {
         $('.header--original')
           .css({ 'visibility':'hidden' });
 
+        $('.gototop')
+          .addClass('gototop--show');
       } else {
         $('.header--cloned')
           .removeClass('header--show');
 
         $('.header--original')
           .css({ 'visibility':'visible' });
+
+        $('.gototop')
+          .removeClass('gototop--show');
       }
     });
   })(jQuery);
@@ -67,10 +72,15 @@ function updateProgressBar() {
 
 (($) => {
   $(document).ready(() => {
-    const observer = lozad('.lozad', {
-      threshold: 0.1 // ratio of element convergence
-    })
-    observer.observe()
+    // const observer = lozad('.lozad', {
+    //   threshold: 0.1 // ratio of element convergence
+    // })
+    // observer.observe()
+
+    $('a[href="#top"]').on('click', (e) => {
+      $('html, body').animate({ scrollTop: 0 }, 500);
+      e.preventDefault();
+    });
   })
 
   window.addEventListener('scroll', () => updateProgressBar() )
