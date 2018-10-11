@@ -2,6 +2,7 @@
   position: relative
   width: 100%
   background: #fff
+  border-top: 4px solid #000
   -webkit-font-smoothing: subpixel-antialiased
   -moz-osx-font-smoothing: auto
   padding: .9375rem /* 15/16 */ 1.875rem /* 30/16 */
@@ -13,18 +14,28 @@
     justify-content: space-between
     align-items: center
   &__brand
-    font-size: 1.75rem /* 28/16 */
+    text-align: center
+    font-size: 2rem /* 32/16 */
     text-transform: uppercase
-    margin: 0 0 1.875rem /* 30/16 */
+    margin: 1.875rem /* 30/16 */ 0
+    transition: all .2s ease-in-out
+    padding: .3125rem /* 5/16 */ .625rem /* 10/16 */
+    border: 2px solid #000
     @media (min-width: 769px)
+      font-size: 1.5rem /* 24/16 */
       margin: 0
     a
       color: #000
       border: none
+      font-weight: 700
     small
       display: block
-      font-size: 1rem /* 16/16 */
-      opacity: 0.35
+      opacity: 0.5
+      font-weight: 300
+      text-transform: lowercase
+      font-size: 1.5rem /* 24/16 */
+      @media (min-width: 769px)
+        font-size: 1.125rem /* 18/16 */
   &--cloned
     position: fixed
     top: 0

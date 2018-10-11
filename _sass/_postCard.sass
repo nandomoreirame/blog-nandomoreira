@@ -10,6 +10,11 @@
     background-color: #fff
     display: block
     border: none
+    border: 2px solid transparent
+    transition: border-color .2s ease-in-out
+    &:hover,
+    &:focus
+      border-color: #000
   &__thumbnail
     margin: 0 0 .9375rem /* 15/16 */
     padding: 0

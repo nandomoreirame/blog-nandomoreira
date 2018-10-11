@@ -1,0 +1,30 @@
+.banner
+  @extend %clearfix
+  margin-bottom: 3.75rem /* 60/16 */
+  &__inner
+    @extend %clearfix
+    @extend .site-main
+  &__link
+    text-align: center
+    display: block
+    width: 100%
+    padding: 1.875rem /* 30/16 */
+    background-color: #fff
+    border: 2px solid transparent
+    transition: border-color .2s ease-in-out
+    color: #000
+    &:hover,
+    &:focus
+      border-color: #000
+    .fab
+      font-size: 4.75rem /* 76/16 */
+      margin-bottom: 1.25rem /* 20/16 */
+      color: #013EBC
+    .fab, span
+      line-height: 1.1
+      display: block
+    span
+      font-weight: 700
+      font-size: 2rem /* 32/16 */
+      @media (min-width: 769px)
+        font-size: 2.625rem /* 42/16 */

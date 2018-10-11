@@ -101,7 +101,7 @@
     color: #777
     font-size: .8em
     display: block
-    margin-top: 50px
+    margin: 3.75rem /* 60/16 */ 0
     @media (min-width: 769px)
       display: flex
       flex-direction: row
@@ -124,11 +124,12 @@
       .text
         width: 90%
       &:hover
-        border-color: #999
+        border-color: #000
+        background-color: #fff
         .icon
           color: #fff
-          background: #999
-          border-color: #999
+          background: #000
+          border-color: #000
       &.prev-post
         justify-content: flex-start
       &.next-post
@@ -152,8 +153,8 @@
 
 .comments
   @extend .site-main
-  padding: 30px
+  padding: 1.875rem /* 30/16 */
   margin: 3.75rem /* 60/16 */ auto
   &__inner
-    padding: 30px
+    padding: 1.875rem /* 30/16 */
     background-color: #fff
