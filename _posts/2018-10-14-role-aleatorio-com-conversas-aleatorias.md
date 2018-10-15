@@ -4,7 +4,7 @@ current: post
 title: Role aleatório com conversas aleatórias gerou pensamentos aleatórios
 description: Domingo, 14 de outubro de 2018, eu passei por um dos meus melhores finais de semana, conheci pessoas novas e troquei muitas ideias aleatórias com essas pessoas.
 date: 2018-10-14
-categories: geral
+categories: vida
 tags:
 - pensamentos
 - aleatorio
