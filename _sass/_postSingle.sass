@@ -1,5 +1,11 @@
+body.post-template .header
+  border-color: transparent
+
 .postSingle
   @extend %clearfix
+  &__description
+    color: #fff
+    opacity: 0.75
   &__title
     color: #fff
     margin-top: 0
@@ -17,6 +23,7 @@
     padding-top: 7.5rem /* 120/16 */
     padding-bottom: 7.5rem /* 120/16 */
     margin-bottom: 3.75rem /* 60/16 */
+    background-color: #000
     a
       color: rgba(#fff, .75)
       font-weight: 700

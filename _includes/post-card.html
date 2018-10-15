@@ -1,8 +1,10 @@
-<article class="postCard" v-masonry-tile>
+<article class="postCard {% if page.cover %}postCard---image{% endif %}" v-masonry-tile>
     <a class="postCard__inner" href="{{ post.url }}" title="{{ post.title }}">
+        {% if post.cover %}
         <figure class="postCard__thumbnail">
             <img src="{{ post.cover | absolute_url }}" alt="{{ post.title }}">
         </figure>
+        {% endif %}
         <header class="postCard__details">
             <div class="postCard__meta">
                 <div class="postCard__category">

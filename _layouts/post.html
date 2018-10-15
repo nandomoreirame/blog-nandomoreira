@@ -22,6 +22,13 @@ disqus: true
                     {% endfor %}
                 </h4>
                 <h1 class="postSingle__title">{{ page.title }}</h1>
+
+                {% if page.description %}
+                    <p class="postSingle__description">
+                        {{ page.description }}
+                    </p>
+                {% endif %}
+
                 <div class="postSingle__meta">
                     {% for author in site.data.authors %}
                         {% if author[1].username == page.author %}
