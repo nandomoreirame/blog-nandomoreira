@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import axios from 'axios'
 import lozad from 'lozad'
-import { VueMasonryPlugin } from 'vue-masonry'
 
 window._ = require('lodash')
 // window.Popper = require('popper.js').default
@@ -9,15 +8,15 @@ window.Vue = Vue
 window.axios = axios
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
-var anchorJS = require('anchor-js');
-var anchors = new anchorJS();
+var anchorJS = require('anchor-js')
+var anchors = new anchorJS()
 
 try {
   window.$ = window.jQuery = require('jquery')
   // require('bootstrap')
 
-  anchors.options.placement = 'left';
-  anchors.add('.postSingle__body > h2, .postSingle__body > h3, .postSingle__body > h4, .postSingle__body > h5, .postSingle__body > h6');
+  anchors.options.placement = 'left'
+  anchors.add('.postSingle__body > h2, .postSingle__body > h3, .postSingle__body > h4, .postSingle__body > h5, .postSingle__body > h6')
 
   (function ($) {
     $('.header')
@@ -25,43 +24,43 @@ try {
       .clone()
       .appendTo('body')
       .addClass('header--cloned')
-      .removeClass('header--original');
+      .removeClass('header--original')
 
-    var iScrollPos = 0;
+    var iScrollPos = 0
 
     $(window).scroll(function () {
-      var orgElementPos = $('.header--original').offset();
-      var orgElementTop = orgElementPos.top;
-      var windowPosition = $(this).scrollTop();
+      var orgElementPos = $('.header--original').offset()
+      var orgElementTop = orgElementPos.top
+      var windowPosition = $(this).scrollTop()
 
       if (windowPosition >= (orgElementTop + $('.header--original').height())) {
         if(windowPosition > iScrollPos) {
           $('.header--cloned')
-            .removeClass('header--show');
+            .removeClass('header--show')
         } else {
           $('.header--cloned')
-            .addClass('header--show');
+            .addClass('header--show')
         }
 
-        iScrollPos = windowPosition;
+        iScrollPos = windowPosition
 
         $('.header--original')
-          .css({ 'visibility':'hidden' });
+          .css({ 'visibility':'hidden' })
 
         $('.gototop')
-          .addClass('gototop--show');
+          .addClass('gototop--show')
       } else {
         $('.header--cloned')
-          .removeClass('header--show');
+          .removeClass('header--show')
 
         $('.header--original')
-          .css({ 'visibility':'visible' });
+          .css({ 'visibility':'visible' })
 
         $('.gototop')
-          .removeClass('gototop--show');
+          .removeClass('gototop--show')
       }
-    });
-  })(jQuery);
+    })
+  })(jQuery)
 } catch (e) {}
 
 function updateProgressBar() {
@@ -78,9 +77,9 @@ function updateProgressBar() {
     // observer.observe()
 
     $('a[href="#top"]').on('click', (e) => {
-      $('html, body').animate({ scrollTop: 0 }, 500);
-      e.preventDefault();
-    });
+      $('html, body').animate({ scrollTop: 0 }, 500)
+      e.preventDefault()
+    })
   })
 
   window.addEventListener('scroll', () => updateProgressBar() )
@@ -88,7 +87,6 @@ function updateProgressBar() {
   updateProgressBar()
 })(jQuery)
 
-Vue.use(VueMasonryPlugin)
 Vue.component('cp-search-form', require('@/components/SearchForm.vue'))
 Vue.component('cp-error-404', require('@/components/Error404.vue'))
 
