@@ -75,7 +75,7 @@ Não ligar para o que os outros pensam de você e não julgar as pessoas a sua v
 
 Eu comecei a olhar pequenas coisas que estão a minha volta com outros olhos, passei a olhar pequenos detalhes da vida que antes eu não enxergava.
 
-> “As pessoas estão mais preocupadas com elas mesmas” <small>Pessoa incrível chamada **Viviane**, que apareceu aleatoriamente na minha vida</small>
+> “As pessoas estão mais preocupadas com elas mesmas” <small>Pessoa incrível que apareceu aleatoriamente na minha vida</small>
 
 Eu te proponho um outro desafio: **Tente olhar para coisas menores a sua volta**.
 
