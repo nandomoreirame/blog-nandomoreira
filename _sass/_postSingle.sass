@@ -23,13 +23,13 @@ body.post-template .header
     padding-top: 7.5rem /* 120/16 */
     padding-bottom: 7.5rem /* 120/16 */
     margin-bottom: 3.75rem /* 60/16 */
-    background-color: #000
+    background-color: $secondary-color
     a
       color: rgba(#fff, .75)
       font-weight: 700
       border-bottom-color: rgba(#fff, .75)
     &--no-image
-      background-color: #000
+      background-color: $secondary-color
     &--image
       background-repeat: no-repeat
       background-position: 50%
@@ -39,7 +39,7 @@ body.post-template .header
         content: ''
         display: block
         opacity: 0.85
-        background-color: #000
+        background-color: $secondary-color
         position: absolute
         width: 100%
         height: 100%
@@ -78,7 +78,8 @@ body.post-template .header
         width: 6.25rem /* 100/16 */
   &__body
     @extend .site-main
-    // .postSingle
+    a
+      border-bottom-color: inherit
     img
       max-width: 100%
       display: block
@@ -131,12 +132,12 @@ body.post-template .header
       .text
         width: 90%
       &:hover
-        border-color: #000
+        border-color: $secondary-color
         background-color: #fff
         .icon
           color: #fff
-          background: #000
-          border-color: #000
+          background: $secondary-color
+          border-color: $secondary-color
       &.prev-post
         justify-content: flex-start
       &.next-post

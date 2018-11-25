@@ -14,7 +14,7 @@ html, body, #site
 body
   line-height: 1.7
   font-family: $font-family-base
-  background-color: $body-bg
+  background-color: darken($body-bg, 4%)
   color: $text-color
   font-size: 1rem /* 16/16 */
   font-weight: 400
@@ -28,18 +28,18 @@ p
     margin-bottom: 1.875rem /* 30/16 */
 
 a
-  color: #999
+  color: $primary-color
   text-decoration: none
   border-bottom: 2px solid transparent
   &:focus, &:hover
-    color: #737373
+    color: $secondary-color
     text-decoration: underline
 
 h1, h2, h3, h4, h5, h6
-  font-family: $font-family-base
+  font-family: $font-family-heading
   text-rendering: optimizeLegibility
-  font-weight: 800
-  line-height: 1.1
+  line-height: 1.3
+  letter-spacing: -0.03rem
   margin: 1.875rem 0
   color: inherit
 
@@ -114,7 +114,7 @@ blockquote
       content: ' ⏤ '
   p
     font: italic 1.65rem/1.5 Georgia,Times,serif
-    color: #000
+    color: $secondary-color
     margin: 0
     position: relative
     font-size: 1.5rem
@@ -149,7 +149,7 @@ blockquote
 .skip a,
 .gototop a
   color: #fff
-  background-color: #000
+  background-color: $secondary-color
   padding: .3125rem /* 5/16 */ .9375rem /* 15/16 */
   border: none
 
@@ -158,7 +158,7 @@ blockquote
   bottom: 0
   right: 20px
   z-index: 100
-  transition: all .25s ease-in-out
+  transition: all .25s $timingFunction
   transform: translate3d(0, 100px, 0)
   &--show
     transform: translate3d(0, -10px, 0)

@@ -18,14 +18,13 @@
     font-size: 2rem /* 32/16 */
     text-transform: uppercase
     margin: 1.875rem /* 30/16 */ 0
-    transition: all .2s ease-in-out
+    transition: all .2s $timingFunction
     padding: .3125rem /* 5/16 */ .625rem /* 10/16 */
-    // border: 2px solid #000
     @media (min-width: 769px)
       font-size: 1.5rem /* 24/16 */
       margin: 0
     a
-      color: #000
+      color: $secondary-color
       border: none
       font-weight: 700
     small
@@ -42,7 +41,7 @@
     right: 0
     left: 0
     z-index: 999
-    transition: all .2s ease-in-out
+    transition: all .2s $timingFunction
     transform: translate3d(0, -150%, 0)
     @media (max-width: 769px)
       .header__brand
