@@ -57,7 +57,6 @@ include:
   - _redirects
 
 exclude:
-  - assets/css
   - node_modules
   - vendor
   - Gemfile
