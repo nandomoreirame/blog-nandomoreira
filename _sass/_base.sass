@@ -22,8 +22,8 @@ body
   -webkit-font-smoothing: antialiased
 
 p
-  font-size: 1.125rem
-  line-height: 1.6
+  font-size: 1.25rem /* 20/16 */
+  // line-height: 1.6
   &:not(:last-child)
     margin-bottom: 1.875rem /* 30/16 */
 
@@ -35,6 +35,9 @@ a
     color: $secondary-color
     text-decoration: underline
 
+  &.anchorjs-link
+    border: none
+
 h1, h2, h3, h4, h5, h6
   font-family: $font-family-heading
   text-rendering: optimizeLegibility
@@ -44,13 +47,13 @@ h1, h2, h3, h4, h5, h6
   color: inherit
 
 h1
-  font-size: 3rem /* 48/16 */
+  font-size: 2.5rem /* 40/16 */
 
 h2
-  font-size: 2.625rem /* 42/16 */
+  font-size: 2.375rem /* 38/16 */
 
 h3
-  font-size: 2rem /* 32/16 */
+  font-size: 2.25rem /* 36/16 */
 
 h4
   font-size: 1.75rem /* 28/16 */
@@ -102,19 +105,19 @@ blockquote
   &:after
     content: "''"
     font: italic 25rem Arial,Serif,Georgia,serif
-    color: rgba(#000, 0.05)
+    color: rgba($text-color, 0.075)
     position: absolute
     top: -80px
     left: -70px
     z-index: 0
   small
     display: block
-    color: lighten(#000, 25%)
+    color: lighten($text-color, 25%)
     &:before
       content: ' ⏤ '
   p
     font: italic 1.65rem/1.5 Georgia,Times,serif
-    color: $secondary-color
+    color: rgba($text-color, .45)
     margin: 0
     position: relative
     font-size: 1.5rem

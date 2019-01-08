@@ -58,6 +58,8 @@ include:
 
 exclude:
   - node_modules
+  - ruby-version
+  - webpack.mix.js
   - vendor
   - Gemfile
   - Gemfile_
@@ -65,5 +67,6 @@ exclude:
   - LICENSE
   - package.json
   - README.md
-  - ./*.lock
+  - Gemfile.lock
+  - yarn.lock
   - .git*

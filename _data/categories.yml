@@ -4,6 +4,9 @@ geral:
 dicas:
   name: Dicas
   description: Some of the greatest words ever spoken.
+reflexoes:
+  name: Reflexões
+  description: Some of the greatest words ever spoken.
 css:
   name: CSS
   description: Some of the greatest words ever spoken.

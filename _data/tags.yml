@@ -38,5 +38,8 @@ yeoman:
   name: Yeoman
   description: Some of the greatest words ever spoken.
 iniciantes:
-  name: iniciantes
+  name: Iniciantes
+  description: Some of the greatest words ever spoken.
+reflexoes:
+  name: Reflexões
   description: Some of the greatest words ever spoken.
