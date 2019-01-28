@@ -54,6 +54,7 @@ compress_html:
   startings: [html, head, body]
 
 include:
+  - _headers
   - _redirects
 
 exclude:
