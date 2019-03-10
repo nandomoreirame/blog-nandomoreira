@@ -2,11 +2,11 @@
 
 ## Support
 
-Please [open an issue](https://github.com/nandomoreirame/readme-boilerplate/issues/new) for support.
+Please [open an issue](../../issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/nandomoreirame/readme-boilerplate/compare?expand=1).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](../../compare?expand=1).
 Contributing
 
 1. Fork it!
