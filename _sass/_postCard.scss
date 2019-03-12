@@ -1,0 +1,69 @@
+.postCard {
+  padding: 0 0.9375rem;
+  margin-bottom: 1.875rem;
+  width: 100%;
+  display: block;
+
+  &__inner {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0px 4px 6px rgba(#000, 0.075);
+    display: block;
+    border: none;
+    transition: box-shadow 0.2s $timingFunction, transform 0.2s $timingFunction;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 6px 12px rgba(#000, 0.1);
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+
+  &__details {
+    margin-top: 0.9375rem;
+  }
+
+  &__thumbnail {
+    margin: 0;
+    padding: 0;
+
+    &, img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__footer,
+  &__details {
+    padding: 0 1.25rem;
+  }
+
+  &__details {
+    padding-top: 1.25rem;
+  }
+
+  &__description {
+    color: rgba($text-color, 0.5);
+    margin-top: 0.3125rem;
+    font-size: 1.125rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    margin: 0;
+  }
+}

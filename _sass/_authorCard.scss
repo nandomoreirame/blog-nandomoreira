@@ -1,0 +1,49 @@
+.authorCard {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: block;
+
+  @extend %clearfix;
+
+  @media (min-width: 769px) {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    margin: 0 0 0.625rem;
+  }
+
+  &__bio {
+    margin: 0;
+
+    a {
+      border-bottom-color: #999;
+    }
+  }
+
+  &__image {
+    margin: 0 auto 0.9375rem;
+    padding: 0;
+    max-width: 160px;
+
+    @media (min-width: 769px) {
+      max-width: 300px;
+      margin: 0 0.9375rem 0 0;
+    }
+
+    a {
+      border: none;
+    }
+
+    img {
+      margin: 0;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

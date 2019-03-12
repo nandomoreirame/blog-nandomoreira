@@ -1,0 +1,31 @@
+.footer {
+  background: #0e0e0e;
+  padding: 1.5625rem 0;
+  margin-top: 3.75rem;
+  color: #fff;
+
+  @extend %clearfix;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &, div, small {
+    line-height: 1;
+  }
+
+  small {
+    font-weight: 400;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 1px solid #fff;
+    transiton: border-color 0.12s $timingFunction;
+
+    &:hover, &:focus {
+      border-bottom-color: transparent;
+      opacity: 0.5;
+    }
+  }
+}

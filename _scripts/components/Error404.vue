@@ -17,25 +17,29 @@
   }
 </script>
 
-<style lang="sass" scoped>
-.Error404
-  width: 100%
-  height: 100%
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
-  &__inner
-    max-width: 50rem /* 800/16 */
-    margin-right: auto
-    margin-left: auto
-  &__code
-    font-size: 11.25rem /* 180/16 */
-    letter-spacing: -0.05rem
-  &__message
-    font-size: 28px
-    font-weight: 300
-    width: 80%
-    margin-right: auto
-    margin-left: auto
+<style lang="scss" scoped>
+.Error404 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__inner {
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__code {
+    font-size: 11.25rem;
+    letter-spacing: -0.05rem;
+  }
+  &__message {
+    font-size: 28px;
+    font-weight: 300;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 </style>

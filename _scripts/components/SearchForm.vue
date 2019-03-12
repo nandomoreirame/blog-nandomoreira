@@ -43,10 +43,13 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.search-form
-  .btn.btn-link
-    &, &:focus, &:active
-      outline: 0 none
-      box-shadow: none
+<style lang="scss" scoped>
+.search-form {
+  .btn.btn-link {
+    &, &:focus, &:active {
+      outline: 0 none;
+      box-shadow: none;
+    }
+  }
+}
 </style>

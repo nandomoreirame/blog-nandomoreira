@@ -12,7 +12,7 @@ const destCss = mix.inProduction() ? join(srcPath, '_includes') : srcPath
 
 mix
   .js(`${srcPath}/_scripts/main.js`, `${destPath}/scripts`) // https://laravel.com/docs/5.6/mix#working-with-scripts
-  .sass(`${srcPath}/_sass/main.sass`, `${destCss}/bundle.css`, {
+  .sass(`${srcPath}/_sass/main.scss`, `${destCss}/bundle.css`, {
     precision: 5
   }) // https://laravel.com/docs/5.6/mix#sass
   .copy('node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css', `${destPath}/css/fancybox.css`)

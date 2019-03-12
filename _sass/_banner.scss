@@ -1,0 +1,62 @@
+.banner {
+  @extend %clearfix;
+
+  margin-bottom: 3.75rem;
+
+  &__inner {
+    @extend %clearfix;
+
+    @extend .site-main;
+  }
+
+  &__link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1.875rem;
+    background-color: #fff;
+    border: 2px solid transparent;
+    transition: border-color 0.2s $timingFunction;
+    color: $secondary-color;
+
+    &:hover,
+    &:focus {
+      border-color: $secondary-color;
+    }
+
+    .fab {
+      font-size: 4.75rem;
+      margin-bottom: 1.25rem;
+      color: #013EBC;
+    }
+
+    .fab, span {
+      line-height: 1.1;
+      display: block;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 2rem;
+
+      @media (min-width: 769px) {
+        font-size: 2.625rem;
+      }
+    }
+  }
+
+  &-umbler {
+    position: fixed;
+    bottom: -1.25rem;
+    left: 1.25rem;
+    z-index: 100;
+    background-color: #557cf2;
+    color: #fff;
+    max-width: 7.5rem;
+
+    a {
+      padding: 1.5625rem;
+      display: block;
+    }
+  }
+}
