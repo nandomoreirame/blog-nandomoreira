@@ -1,2 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
-http://blogdonando.netlify.com/*        http://blog.nandomoreira.me/:splat        301!
+http://blogdonando.netlify.com/*     http://nandomoreira.dev/:splat        301!
+https://blogdonando.netlify.com/*    http://nandomoreira.dev/:splat        301!
+http://blog.nandomoreira.me/*        http://nandomoreira.dev/:splat        301!
+https://blog.nandomoreira.me/*       http://nandomoreira.dev/:splat        301!
