@@ -3,3 +3,4 @@ http://blogdonando.netlify.com/*     https://nandomoreira.dev/blog/:splat   301!
 https://blogdonando.netlify.com/*    https://nandomoreira.dev/blog/:splat   301!
 http://blog.nandomoreira.me/*        https://nandomoreira.dev/blog/:splat   301!
 https://blog.nandomoreira.me/*       https://nandomoreira.dev/blog/:splat   301!
+https://blog.nandomoreira.me/page/*  https://nandomoreira.dev/blog/:splat   301!
