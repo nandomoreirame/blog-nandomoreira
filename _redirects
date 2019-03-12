@@ -1,6 +1,11 @@
 # Redirect default Netlify subdomain to primary domain
-http://blogdonando.netlify.com/*     https://nandomoreira.dev/blog/:splat   301!
-https://blogdonando.netlify.com/*    https://nandomoreira.dev/blog/:splat   301!
-http://blog.nandomoreira.me/*        https://nandomoreira.dev/blog/:splat   301!
-https://blog.nandomoreira.me/*       https://nandomoreira.dev/blog/:splat   301!
-https://blog.nandomoreira.me/page/*  https://nandomoreira.dev/blog/:splat   301!
+https://blog.nandomoreira.me/page/*      https://nandomoreira.dev/blog/:splat       301!
+https://blog.nandomoreira.me/tag/*       https://nandomoreira.dev/tag/:splat        301!
+https://blog.nandomoreira.me/tags/*      https://nandomoreira.dev/tag/:splat        301!
+https://blog.nandomoreira.me/category/*  https://nandomoreira.dev/categoria/:splat  301!
+
+http://blog.nandomoreira.me/*            https://nandomoreira.dev/blog/:splat       301!
+https://blog.nandomoreira.me/*           https://nandomoreira.dev/blog/:splat       301!
+
+http://blogdonando.netlify.com/*         https://nandomoreira.dev/blog/:splat       301!
+https://blogdonando.netlify.com/*        https://nandomoreira.dev/blog/:splat       301!
